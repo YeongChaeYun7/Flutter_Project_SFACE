@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home/styles/app_colors.dart';
 import 'package:home/view/homePage.dart';
 
 void main() {
@@ -11,7 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(fontFamily: 'Pretendard'),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        scaffoldBackgroundColor: AppColors.stroke_line_5,
+        fontFamily: 'Pretendard',
+      ),
       home: const homePage(),
     );
   }

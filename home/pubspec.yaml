@@ -65,13 +65,15 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - asset/logo.svg
-    - asset/ad.svg
-    - asset/fire.svg
-    - asset/HotTalkman-a.svg
-    - asset/Heart.svg
-    - asset/Heart_NotSelected.svg
-    - asset/circleavatar.svg
+    - assets/ad/ad.svg
+    - assets/icon/logo/Nav_Logo.svg
+    - assets/icon/icon_70/fire.svg
+    - assets/icon/icon_50/man-a.svg
+    - assets/icon/avatar/Property 1=Default.svg
+    - assets/icon/icon_20/Property 1=NotSelect.svg
+    - assets/icon/icon_20/Property 1=Like.svg
+    - assets/icon/icon_20/plus.svg
+
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
@@ -88,13 +90,13 @@ flutter:
   fonts:
     - family: Pretendard
       fonts:
-        - asset: asset/Font/Pretendard-Regular.ttf
+        - asset: assets/font/Pretendard-Regular.ttf
           weight: 400
-        - asset: asset/Font/Pretendard-Medium.ttf
+        - asset: assets/font/Pretendard-Medium.ttf
           weight: 500
-        - asset: asset/Font/Pretendard-Bold.ttf
+        - asset: assets/font/Pretendard-Bold.ttf
           weight: 700
-        - asset: asset/Font/Pretendard-Black.ttf
+        - asset: assets/font/Pretendard-Black.ttf
           weight: 900
   #   - family: Schyler
   #     fonts:

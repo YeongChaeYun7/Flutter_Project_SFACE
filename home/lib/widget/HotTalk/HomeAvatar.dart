@@ -13,13 +13,8 @@ class HomeAvatar extends StatelessWidget {
         child: Stack(children: [
           Align(
             alignment: Alignment.center,
-            child: CircleAvatar(
-              radius: 38,
-              backgroundColor: const Color.fromARGB(255, 243, 246, 249),
-              child: SvgPicture.asset(
-                'asset/HotTalkman-a.svg',
-                height: 53,
-              ),
+            child: SvgPicture.asset(
+              'assets/icon/avatar/Property 1=Default.svg',
             ),
           ),
           Positioned(

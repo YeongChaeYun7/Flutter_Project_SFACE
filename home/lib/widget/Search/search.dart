@@ -16,6 +16,8 @@ class _MyWidgetState extends State<Search> {
         padding: const EdgeInsets.all(8.0),
         child: TextField(
           decoration: InputDecoration(
+            filled: true,
+            fillColor: Colors.white,
             hintText: '내용 검색하기',
             hintStyle: TextStyle(color: Colors.grey.shade300),
             prefixIcon: Icon(

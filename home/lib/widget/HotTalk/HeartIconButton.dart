@@ -15,15 +15,14 @@ class _HeartIconButtonState extends State<HeartIconButton> {
   Widget build(BuildContext context) {
     return IconButton(
       splashRadius: 0.01,
-      disabledColor: Colors.amber,
       onPressed: () {
         setState(() {
           isSelected = !isSelected;
         });
       },
       icon: isSelected
-          ? SvgPicture.asset('asset/Heart.svg')
-          : SvgPicture.asset('asset/Heart_NotSelected.svg'),
+          ? SvgPicture.asset('assets/icon/icon_20/Property 1=Like.svg')
+          : SvgPicture.asset('assets/icon/icon_20/Property 1=NotSelect.svg'),
     );
   }
 }

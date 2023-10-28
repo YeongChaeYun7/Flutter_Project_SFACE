@@ -29,19 +29,19 @@ class _AdState extends State<Ad> {
             children: [
               Container(
                 child: SvgPicture.asset(
-                  'asset/ad.svg',
+                  'assets/ad/ad.svg',
                   width: MediaQuery.of(context).size.width,
                 ),
               ),
               Container(
                 child: SvgPicture.asset(
-                  'asset/ad.svg',
+                  'assets/ad/ad.svg',
                   width: MediaQuery.of(context).size.width,
                 ),
               ),
               Container(
                 child: SvgPicture.asset(
-                  'asset/ad.svg',
+                  'assets/ad/ad.svg',
                   width: MediaQuery.of(context).size.width,
                 ),
               )

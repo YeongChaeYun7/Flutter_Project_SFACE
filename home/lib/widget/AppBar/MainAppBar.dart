@@ -10,7 +10,7 @@ class MainAppBar extends StatelessWidget {
       body: Container(
         margin: const EdgeInsets.fromLTRB(10, 20, 10, 10),
         child: SvgPicture.asset(
-          'asset/logo.svg',
+          'assets/icon/logo/Nav_Logo.svg',
           width: 80,
         ),
       ),

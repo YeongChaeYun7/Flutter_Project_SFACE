@@ -11,7 +11,10 @@ class HotTalkBar extends StatelessWidget {
         ListTile(
           minLeadingWidth: 2,
           horizontalTitleGap: 5,
-          leading: SvgPicture.asset('asset/fire.svg'),
+          leading: SvgPicture.asset(
+            'assets/icon/icon_70/fire.svg',
+            height: 22,
+          ),
           title: const Text(
             '핫한 톡',
             style: TextStyle(

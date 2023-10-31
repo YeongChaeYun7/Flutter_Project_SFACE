@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: const homePage(),
+      home: homePage(),
     );
   }
 }
+// assets/icon/tag/1st.svg

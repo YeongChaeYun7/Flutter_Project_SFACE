@@ -23,13 +23,13 @@ class BubbleChat extends StatelessWidget {
           child: Container(
             height: 37,
             constraints: BoxConstraints(
-              maxWidth: MediaQuery.of(context).size.width * 0.63,
+              maxWidth: MediaQuery.of(context).size.width * 0.61,
             ),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 SizedBox(
-                  width: 200,
+                  width: 190,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     mainAxisAlignment: MainAxisAlignment.center,

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
+
 import 'package:home/styles/app_colors.dart';
-import 'package:home/view/homePage.dart';
+import 'package:home/view/HomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +19,18 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: const homePage(),
+      home: Scaffold(
+        appBar: AppBar(
+          centerTitle: false,
+          backgroundColor: Colors.white,
+          elevation: 0,
+          title: SvgPicture.asset(
+            'assets/icon/logo/Nav_Logo.svg',
+            width: 70,
+          ),
+        ),
+        body: const homePage(),
+      ),
     );
   }
 }

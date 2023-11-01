@@ -3,6 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/widget/Ad/ad.dart';
 import 'package:home/widget/AppBar/MainAppBar.dart';
 import 'package:home/widget/Catchup/CatchupCard.dart';
+import 'package:home/widget/Ad/ad.dart';
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 import 'package:home/widget/Mogakko/MogakkoCard.dart';
@@ -55,6 +56,25 @@ class homePage extends StatelessWidget {
               SpacerCardList(), // error. the constructor being called isn't a const constructor.
             ],
           ),
+        body: Column(
+          children: [
+            Ad(),
+            SizedBox(height: 3),
+            Search(),
+            HotTalkBar(),
+            Column(
+              children: [
+                Row(children: [
+                  HomeAvatar(),
+                  BubbleChat(),
+                ]),
+                Row(children: [
+                  HomeAvatar(),
+                  BubbleChat(),
+                ])
+              ],
+            ),
+          ],
         ),
         bottomNavigationBar: MyBottomNavigationBar(), // error. the constructor being called isn't a const constructor.
       ),

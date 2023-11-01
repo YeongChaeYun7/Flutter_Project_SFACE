@@ -32,7 +32,8 @@ dependencies:
   flutter_svg: ^2.0.7
   smooth_page_indicator: ^1.1.0
   flutter_chat_bubble: ^2.0.2
-  
+  shimmer: ^3.0.0
+  http : ^1.1.0
   flutter:
     sdk: flutter
 
@@ -86,7 +87,15 @@ flutter:
     - assets/icon/icon_50/man-a.svg
     - assets/icon/icon_70/
     - assets/icon/icon_70/fire.svg
-
+    - assets/icon/icon_30/Community.svg
+    - assets/
+    - asset/logo.svg
+    - asset/ad.svg
+    - asset/fire.svg
+    - asset/HotTalkman-a.svg
+    - asset/Heart.svg
+    - asset/Heart_NotSelected.svg
+    - asset/circleavatar.svg
     - assets/icon/logo/Logo.svg
     - assets/icon/logo/Nav_Logo.svg
 

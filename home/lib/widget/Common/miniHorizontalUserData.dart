@@ -20,7 +20,7 @@ class MiniUserData extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      // mainAxisAlignment: MainAxisAlignment.start,
+      mainAxisAlignment: MainAxisAlignment.start,
       children: [
         MiniAvatar(imagePath: this.imagePath, userClass: this.userClass),
         Text(

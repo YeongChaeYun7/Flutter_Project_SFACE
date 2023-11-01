@@ -26,10 +26,7 @@ class homePage extends StatelessWidget {
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(
-            children: [
-              Image.asset('assets/pngRocket.png'),
-              // SvgPicture.asset(
-              //           'assets/catchup/rocket.svg'),
+            children: [      
               Ad(),
               SizedBox(height: 3),
               Search(),
@@ -61,10 +58,3 @@ class homePage extends StatelessWidget {
     );
   }
 }
-              // SpacerCard(
-              //       imagePath: 'assets/icon/avatar/Property 1=Default.svg',
-              //       userClass: '개발자/1기',
-              //       userName: '신디',
-              //       userType: '수료생',
-              //       tagimagePath: 'assets/icon/tag/1st.svg',
-              //     ),

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
-import 'package:home/view/homePage.dart';
+import 'package:home/view/CatchUP/hotCatchupPage.dart';
+import 'package:home/view/catchup/allCatchupPage.dart';
+// import 'package:home/view/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,8 +19,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: homePage(),
+      home: HotCatchupPage()
     );
   }
 }
-// assets/icon/tag/1st.svg

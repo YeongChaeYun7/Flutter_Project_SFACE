@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:home/widget/FloatingButton/FloatingButton.dart';
 
 import 'package:home/widget/HotTalk/BubbleChat.dart';
-import 'package:home/widget/HotTalk/FloatingButton.dart';
+
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 import 'package:home/widget/HotTalk/TalkTalkBar.dart';
+import 'package:home/widget/HotTalk/hotTalkBar.dart';
 import 'package:home/widget/Search/search.dart';
-
-import '../widget/HotTalk/hotTalkBar.dart';
 
 class TalkPage extends StatelessWidget {
   const TalkPage({super.key});

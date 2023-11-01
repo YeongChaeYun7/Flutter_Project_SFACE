@@ -3,6 +3,9 @@ import 'package:flutter_svg/svg.dart';
 
 import 'package:home/styles/app_colors.dart';
 import 'package:home/view/HomePage.dart';
+import 'package:home/view/ShimmerTalkPage.dart';
+import 'package:home/view/TalkPage.dart';
+import 'package:home/widget/Shimmer/ShimmerTalkBlock.dart';
 
 void main() {
   runApp(const MyApp());
@@ -29,7 +32,7 @@ class MyApp extends StatelessWidget {
             width: 70,
           ),
         ),
-        body: const homePage(),
+        body: const ShimmerTalkPage(),
       ),
     );
   }

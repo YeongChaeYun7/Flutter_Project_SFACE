@@ -6,6 +6,8 @@ import 'package:home/view/HomePage.dart';
 import 'package:home/view/ShimmerTalkPage.dart';
 import 'package:home/view/TalkPage.dart';
 import 'package:home/widget/Shimmer/ShimmerTalkBlock.dart';
+import 'package:home/view/LoginPage/loginPage.dart';
+// import 'package:home/view/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -34,6 +36,8 @@ class MyApp extends StatelessWidget {
         ),
         body: const ShimmerTalkPage(),
       ),
+      theme: ThemeData(fontFamily: 'Pretendard'),
+      home: LoginPage(),
     );
   }
 }

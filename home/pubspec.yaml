@@ -33,7 +33,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   flutter_chat_bubble: ^2.0.2
   shimmer: ^3.0.0
-  
+  http : ^1.1.0
   flutter:
     sdk: flutter
 
@@ -75,6 +75,14 @@ flutter:
     - assets/icon/icon_20/Property 1=Like.svg
     - assets/icon/icon_20/plus.svg
     - assets/icon/icon_30/Community.svg
+    - assets/
+    - asset/logo.svg
+    - asset/ad.svg
+    - asset/fire.svg
+    - asset/HotTalkman-a.svg
+    - asset/Heart.svg
+    - asset/Heart_NotSelected.svg
+    - asset/circleavatar.svg
 
   #   - images/a_dot_ham.jpeg
 

@@ -33,7 +33,7 @@ dependencies:
   smooth_page_indicator: ^1.1.0
   flutter_chat_bubble: ^2.0.2
   shimmer: ^3.0.0
-  
+  http : ^1.1.0
   flutter:
     sdk: flutter
 
@@ -66,16 +66,47 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
+    - assets/pngRocket.png
     - assets/ad/ad.svg
-    - assets/icon/logo/Nav_Logo.svg
-    - assets/icon/icon_70/fire.svg
-    - assets/icon/icon_50/man-a.svg
+
+    - assets/catchup/rocket.svg
+
+    - assets/graphic/Graphic1.svg
+    - assets/graphic/Graphic2.svg
+    - assets/graphic/Graphic3.svg
+    - assets/graphic/Graphic4.svg
+    - assets/graphic/Graphic5.svg
+
     - assets/icon/avatar/Property 1=Default.svg
+
+    - assets/icon/icon_20/
     - assets/icon/icon_20/Property 1=NotSelect.svg
     - assets/icon/icon_20/Property 1=Like.svg
     - assets/icon/icon_20/plus.svg
-    - assets/icon/icon_30/Community.svg
 
+    - assets/icon/icon_30/
+    - assets/icon/icon_30/Community.svg
+    
+    - assets/icon/icon_50/
+    - assets/icon/icon_50/man-a.svg
+
+    - assets/icon/icon_70/
+    - assets/icon/icon_70/Flutter.svg
+    - assets/icon/icon_70/JS.svg
+    - assets/icon/icon_70/Python.svg
+    - assets/icon/icon_70/React.svg
+    - assets/icon/icon_70/Send.svg
+    - assets/icon/icon_70/Warning.svg
+
+
+    - assets/icon/logo/Logo.svg
+    - assets/icon/logo/Nav_Logo.svg
+
+    - assets/icon/tag/1st.svg
+    - assets/icon/tag/2nd.svg
+    - assets/icon/tag/3rd.svg
+  
+    - assets/user_avatar/
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

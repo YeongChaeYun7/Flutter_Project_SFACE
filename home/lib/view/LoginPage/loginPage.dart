@@ -17,19 +17,6 @@ class _LoginPageState extends State<LoginPage> {
   String password="";
   bool canLogin=false;
 
-  //나으 노력의 흔적들,,,,
-  //
-  // Future<String?> warningMessage(String? value) async {
-  // }
-  //
-  // late Future<String?> _warningMessage;
-  //
-  // void onEmailChanged(String email) {
-  //   setState(() {
-  //     _warningMessage = warningMessage(email);
-  //   });
-  // }
-
   void validateLogin(){
     if (email.length > 0 && password.length >0 ){
       setState(() {
@@ -59,10 +46,6 @@ class _LoginPageState extends State<LoginPage> {
     }
     return null;
   }
-  //
-  // String? onWarning(String?value){
-  //   return warningMessage(value)?
-  // }
 
   @override
   Widget build(BuildContext context) {

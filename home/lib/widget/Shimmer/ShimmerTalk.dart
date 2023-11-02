@@ -2,18 +2,13 @@ import 'package:flutter/material.dart';
 
 import 'package:home/widget/Shimmer/ShimmerContainer.dart';
 
-class ShimmerTalkBlock extends StatelessWidget {
-  const ShimmerTalkBlock({super.key});
+class ShimmerTalk extends StatelessWidget {
+  const ShimmerTalk({super.key});
 
   @override
   Widget build(BuildContext context) {
     return const Column(children: [
       SizedBox(height: 20),
-      ShimmerContainer(
-        height: 18,
-        width: 400,
-      ),
-      SizedBox(height: 15),
       Padding(
         padding: EdgeInsets.all(10),
         child: Row(
@@ -58,12 +53,6 @@ class ShimmerTalkBlock extends StatelessWidget {
           ],
         ),
       ),
-      SizedBox(height: 53),
-      ShimmerContainer(
-        height: 18,
-        width: 400,
-      ),
-      SizedBox(height: 20),
     ]);
   }
 }

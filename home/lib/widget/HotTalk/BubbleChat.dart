@@ -26,7 +26,7 @@ class BubbleChat extends StatelessWidget {
               maxWidth: MediaQuery.of(context).size.width * 0.63,
             ),
             child: const Row(
-              mainAxisAlignment: MainAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
                   width: 200,

@@ -6,8 +6,8 @@ import 'package:home/widget/Search/search.dart';
 import 'package:home/widget/Common/TitleBar.dart';
 import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
 
-class CatchupPage extends StatelessWidget {
-  CatchupPage({super.key});
+class AllCatchupPage extends StatelessWidget {
+  AllCatchupPage({super.key});
 
   @override
   Widget build(BuildContext context) {

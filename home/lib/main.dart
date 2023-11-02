@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
+import 'package:home/view/CatchUP/catchupPage.dart';
 import 'package:home/view/CatchUP/hotCatchupPage.dart';
 import 'package:home/view/catchup/allCatchupPage.dart';
+import 'package:home/view/homePage.dart';
 // import 'package:home/view/homePage.dart';
 
 void main() {
@@ -20,6 +22,9 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Pretendard',
       ),
       home: HotCatchupPage()
+      // home: AllCatchupPage()
+      // home: CatchupPage()
+      // home: homePage()
     );
   }
 }

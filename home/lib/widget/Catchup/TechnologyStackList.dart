@@ -28,26 +28,73 @@ class TechnologyStackList extends StatelessWidget {
       ),
     );
   }
-  Widget _buildSvgIconButton(String svgAssetPath, Function() onPressed) {
-    return Row(
-      children: [
-        SizedBox(width: 8),
-        Padding(
-          padding: const EdgeInsets.all(5.0),
-          child: Column(
-            children: [
-              InkWell(
-                onTap: onPressed,
-                child: SvgPicture.asset(
-                  svgAssetPath,
-                  width: 60,
-                  height: 60,
+Widget _buildSvgIconButton(String svgAssetPath, Function() onPressed) {
+  return Row(
+    children: [
+      SizedBox(width: 8),
+      Padding(
+        padding: const EdgeInsets.all(5.0),
+        child: Column(
+          children: [
+            Container(
+              width: 50,
+              height: 50,
+              decoration: ShapeDecoration(
+                color: Colors.white,
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(width: 1, color: Color(0xFFE6E6E6)),
+                  borderRadius: BorderRadius.circular(10),
                 ),
               ),
-            ],
-          ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  InkWell(
+                    onTap: onPressed,
+                    child: SvgPicture.asset(
+                      svgAssetPath,
+                      width: 60,
+                      height: 60,
+                    ),
+                  ),
+                  Text(
+                    "플러터",
+                    style: TextStyle(
+                      fontSize: 12,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
         ),
-      ],
-    );
-  }
+      ),
+    ],
+  );
+}
+
+
+//   Widget _buildSvgIconButton(String svgAssetPath, Function() onPressed) {
+//     return Row(
+//       children: [
+//         SizedBox(width: 8),
+//         Padding(
+//           padding: const EdgeInsets.all(5.0),
+//           child: Column(
+//             children: [
+//               InkWell(
+//                 onTap: onPressed,
+//                 child: SvgPicture.asset(
+//                   svgAssetPath,
+//                   width: 60,
+//                   height: 60,
+//                 ),
+//               ),
+//             ],
+//           ),
+//         ),
+//       ],
+//     );
+//   }
 }

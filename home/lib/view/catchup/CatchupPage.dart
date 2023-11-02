@@ -1,6 +1,6 @@
 // 캐치업!
 import 'package:flutter/material.dart';
-import 'package:home/widget/AppBar/MainAppBar.dart';
+// import 'package:home/widget/AppBar/MainAppBar.dart';
 import 'package:home/widget/Catchup/CatchupCard.dart';
 import 'package:home/widget/Catchup/DateSortButton.dart';
 import 'package:home/widget/Catchup/TechnologyStackList.dart';
@@ -8,17 +8,17 @@ import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/Search/search.dart';
 import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
 
-class HotCatchupPage extends StatelessWidget {
-  HotCatchupPage({super.key});
+class CatchupPage extends StatelessWidget {
+  CatchupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(45),
-          child: MainAppBar(),
-        ),
+        // appBar: PreferredSize(
+        //   preferredSize: Size.fromHeight(45),
+        //   child: MainAppBar(),
+        // ),
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(

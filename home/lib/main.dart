@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:home/styles/app_colors.dart';
-import 'package:home/view/HomePage.dart';
+import 'package:home/view/homePage/homePage.dart';
 import 'package:home/view/catchup/ShimmerCatchupPage.dart';
 import 'package:home/view/catchup/ShimmerCatchupPageAll.dart';
 import 'package:home/view/talk/ShimmerTalkPage.dart';

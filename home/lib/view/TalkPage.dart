@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-// import 'package:home/widget/FloatingButton/FloatingButton.dart';
+import 'package:home/widget/FloatingButton/FloatingButton.dart';
 
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
-// import 'package:home/widget/HotTalk/TalkTalkBar.dart';
-// import 'package:home/widget/HotTalk/hotTalkBar.dart';
+import 'package:home/widget/HotTalk/TalkTalkBar.dart';
+import 'package:home/widget/HotTalk/hotTalkBar.dart';
 import 'package:home/widget/Search/search.dart';
 
 class TalkPage extends StatelessWidget {
@@ -15,39 +15,39 @@ class TalkPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return const SafeArea(
       child: Scaffold(
-        // floatingActionButton: FloatingButton(),
+        floatingActionButton: FloatingButton(),
         body: Column(
           children: [
             Search(),
             Column(children: [
-              // HotTalkBar(),
+              HotTalkBar(),
               Row(children: [
                 HomeAvatar(),
                 BubbleChat(),
               ])
             ]),
             SizedBox(height: 25),
-            // Column(
-            //   children: [
-            //     TalkTalkBar(),
-            //     Row(children: [
-            //       HomeAvatar(),
-            //       BubbleChat(),
-            //     ]),
-            //     Row(children: [
-            //       HomeAvatar(),
-            //       BubbleChat(),
-            //     ]),
-            //     Row(children: [
-            //       HomeAvatar(),
-            //       BubbleChat(),
-            //     ]),
-            //     Row(children: [
-            //       HomeAvatar(),
-            //       BubbleChat(),
-            //     ])
-            //   ],
-            // )
+            Column(
+              children: [
+                TalkTalkBar(),
+                Row(children: [
+                  HomeAvatar(),
+                  BubbleChat(),
+                ]),
+                Row(children: [
+                  HomeAvatar(),
+                  BubbleChat(),
+                ]),
+                Row(children: [
+                  HomeAvatar(),
+                  BubbleChat(),
+                ]),
+                Row(children: [
+                  HomeAvatar(),
+                  BubbleChat(),
+                ])
+              ],
+            )
           ],
         ),
       ),

@@ -41,7 +41,7 @@ class BubbleChat extends StatelessWidget {
                       ),
                       SizedBox(height: 2),
                       Text(
-                        '근데 혹시 15일차 강의 푸신 분 있으면 좀 알려주세요',
+                        '근데 혹시 15일차 강의 푸신 분 있으면 좀 알려주세요. 뭐가 바뀌어야 하죠',
                         style: TextStyle(fontSize: 13),
                         overflow: TextOverflow.ellipsis,
                         maxLines: 1,

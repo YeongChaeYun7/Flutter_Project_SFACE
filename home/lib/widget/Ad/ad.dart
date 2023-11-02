@@ -18,7 +18,7 @@ class _AdState extends State<Ad> {
     return Column(
       children: [
         SizedBox(
-          height: 200,
+          height: 180,
           child: PageView(
             controller: controller,
             onPageChanged: (int page) {
@@ -48,7 +48,7 @@ class _AdState extends State<Ad> {
             ],
           ),
         ),
-        const SizedBox(height: 3),
+        const SizedBox(height: 15),
         SmoothPageIndicator(
           controller: controller,
           count: 3,

@@ -78,24 +78,27 @@ flutter:
     - assets/graphic/Graphic5.svg
 
     - assets/icon/avatar/Property 1=Default.svg
+
     - assets/icon/icon_20/
     - assets/icon/icon_20/Property 1=NotSelect.svg
     - assets/icon/icon_20/Property 1=Like.svg
     - assets/icon/icon_20/plus.svg
+
     - assets/icon/icon_30/
+    - assets/icon/icon_30/Community.svg
+    
     - assets/icon/icon_50/
     - assets/icon/icon_50/man-a.svg
+
     - assets/icon/icon_70/
-    - assets/icon/icon_70/fire.svg
-    - assets/icon/icon_30/Community.svg
-    - assets/
-    - asset/logo.svg
-    - asset/ad.svg
-    - asset/fire.svg
-    - asset/HotTalkman-a.svg
-    - asset/Heart.svg
-    - asset/Heart_NotSelected.svg
-    - asset/circleavatar.svg
+    - assets/icon/icon_70/Flutter.svg
+    - assets/icon/icon_70/JS.svg
+    - assets/icon/icon_70/Python.svg
+    - assets/icon/icon_70/React.svg
+    - assets/icon/icon_70/Send.svg
+    - assets/icon/icon_70/Warning.svg
+
+
     - assets/icon/logo/Logo.svg
     - assets/icon/logo/Nav_Logo.svg
 

@@ -6,7 +6,7 @@ import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 import 'package:home/widget/Search/search.dart';
 
-import '../../widget/HotTalk/hotTalkBar.dart';
+import 'package:home/widget/HotTalk/hotTalkBar.dart';
 
 class homePage extends StatelessWidget {
   const homePage({super.key});

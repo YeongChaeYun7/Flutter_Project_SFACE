@@ -46,11 +46,7 @@ class _LoginPageState extends State<LoginPage> {
     }
     return null;
   }
-<<<<<<< Updated upstream
 
-=======
-  
->>>>>>> Stashed changes
   @override
   Widget build(BuildContext context) {
     return SafeArea(

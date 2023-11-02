@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import 'package:home/styles/app_colors.dart';
-import 'package:home/view/CatchUP/hotCatchupPage.dart';
-import 'package:home/view/catchup/allCatchupPage.dart';
 import 'package:home/view/HomePage.dart';
 import 'package:home/view/ShimmerTalkPage.dart';
 import 'package:home/view/TalkPage.dart';
@@ -26,7 +24,6 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: HotCatchupPage()
       home: Scaffold(
         appBar: AppBar(
           centerTitle: false,
@@ -44,3 +41,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// assets/icon/tag/1st.svg

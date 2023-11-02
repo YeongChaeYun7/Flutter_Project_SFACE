@@ -99,10 +99,13 @@ class CatchupCard extends StatelessWidget {
                     // aspectRatio: 1.0,// 가로 길이 고정. 
                     child: Container(
                       height: double.infinity,
-                      color: AppColors.primary_100,
-                      child:SvgPicture.asset('assets/catchups/Rocket.svg',// 없는 파일
+                      child:Image.asset('assets/pngRocket.png',
                       fit: BoxFit.cover,
                       ),
+                      // SvgPicture.asset(
+                      //   'assets/ad/ad.svg',
+                        
+                      // ),
                     ),
                   ),
                 ),

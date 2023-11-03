@@ -1,8 +1,6 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:home/widget/GreyBox.dart';
 import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/Common/miniHorizontalUserData.dart';
@@ -99,12 +97,11 @@ class CatchupCard extends StatelessWidget {
                     // aspectRatio: 1.0,// 가로 길이 고정. 
                     child: Container(
                       height: double.infinity,
-                      child:Image.asset('assets/pngRocket.png',
+                      child:Image.asset('assets/Rocket.png',
                       fit: BoxFit.cover,
                       ),
                       // SvgPicture.asset(
                       //   'assets/ad/ad.svg',
-                        
                       // ),
                     ),
                   ),

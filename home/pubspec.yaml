@@ -69,7 +69,7 @@ flutter:
     - assets/pngRocket.png
     - assets/ad/ad.svg
 
-    - assets/catchup/rocket.svg
+    - assets/catchup/Rocket.png
 
     - assets/graphic/Graphic1.svg
     - assets/graphic/Graphic2.svg
@@ -91,13 +91,6 @@ flutter:
     - assets/icon/icon_50/man-a.svg
 
     - assets/icon/icon_70/
-    - assets/icon/icon_70/Flutter.svg
-    - assets/icon/icon_70/JS.svg
-    - assets/icon/icon_70/Python.svg
-    - assets/icon/icon_70/React.svg
-    - assets/icon/icon_70/Send.svg
-    - assets/icon/icon_70/Warning.svg
-
 
     - assets/icon/logo/Logo.svg
     - assets/icon/logo/Nav_Logo.svg

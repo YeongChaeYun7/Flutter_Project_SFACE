@@ -5,7 +5,7 @@ import 'package:home/widget/HotTalk/BubbleChat.dart';
 
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 import 'package:home/widget/HotTalk/TalkTalkBar.dart';
-import 'package:home/widget/HotTalk/hotTalkBar.dart';
+// import 'package:home/widget/HotTalk/hotTalkBar.dart';
 import 'package:home/widget/Search/search.dart';
 
 class TalkPage extends StatelessWidget {
@@ -19,13 +19,13 @@ class TalkPage extends StatelessWidget {
         body: Column(
           children: [
             Search(),
-            Column(children: [
-              HotTalkBar(),
-              Row(children: [
-                HomeAvatar(),
-                BubbleChat(),
-              ])
-            ]),
+            // Column(children: [
+            //   HotTalkBar(),
+            //   Row(children: [
+            //     HomeAvatar(),
+            //     BubbleChat(),
+            //   ])
+            // ]),
             SizedBox(height: 25),
             Column(
               children: [

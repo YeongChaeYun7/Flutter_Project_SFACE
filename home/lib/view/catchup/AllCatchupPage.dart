@@ -1,6 +1,5 @@
 // 전체 캐치업 
 import 'package:flutter/material.dart';
-import 'package:home/widget/AppBar/MainAppBar.dart';
 import 'package:home/widget/Catchup/CatchupCard.dart';
 import 'package:home/widget/Search/search.dart';
 import 'package:home/widget/Common/TitleBar.dart';
@@ -13,10 +12,6 @@ class AllCatchupPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        appBar: PreferredSize(
-          preferredSize: Size.fromHeight(45),
-          child: MainAppBar(),
-        ),
         body: SingleChildScrollView(
           scrollDirection: Axis.vertical,
           child: Column(

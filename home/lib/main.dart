@@ -3,14 +3,18 @@ import 'package:flutter_svg/svg.dart';
 
 import 'package:home/styles/app_colors.dart';
 import 'package:home/view/homePage/homePage.dart';
-import 'package:home/view/catchup/ShimmerCatchupPage.dart';
-import 'package:home/view/catchup/ShimmerCatchupPageAll.dart';
+import 'package:home/view/talk/DetailTalkPage.dart';
 import 'package:home/view/talk/ShimmerTalkPage.dart';
 import 'package:home/view/talk/TalkPage.dart';
-import 'package:home/widget/HotTalk/HotTalkBar.dart';
-import 'package:home/widget/Shimmer/ShimmerCatchup.dart';
+import 'package:home/widget/HotTalk/mainChat.dart';
+// import 'package:home/view/catchup/ShimmerCatchupPage.dart';
+// import 'package:home/view/catchup/ShimmerCatchupPageAll.dart';
+// import 'package:home/view/talk/ShimmerTalkPage.dart';
+// import 'package:home/view/talk/TalkPage.dart';
+// import 'package:home/widget/HotTalk/HotTalkBar.dart';
+// import 'package:home/widget/Shimmer/ShimmerCatchup.dart';
 
-import 'package:home/widget/Shimmer/ShimmerTalk.dart';
+// import 'package:home/widget/Shimmer/ShimmerTalk.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,7 +41,7 @@ class MyApp extends StatelessWidget {
             width: 70,
           ),
         ),
-        body: const ShimmercatchupPage(),
+        body: const mainChat(),
       ),
     );
   }

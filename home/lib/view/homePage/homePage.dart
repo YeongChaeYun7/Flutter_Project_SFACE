@@ -1,12 +1,11 @@
 import 'package:flutter/material.dart';
 
 import 'package:home/widget/Ad/ad.dart';
+import 'package:home/widget/Common/TitleBar.dart';
 
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 import 'package:home/widget/Search/search.dart';
-
-import 'package:home/widget/HotTalk/hotTalkBar.dart';
 
 class homePage extends StatelessWidget {
   const homePage({super.key});
@@ -20,16 +19,20 @@ class homePage extends StatelessWidget {
             Ad(),
             SizedBox(height: 3),
             Search(),
-            HotTalkBar(),
+            TitleBar(imagePath: 'assets/icon/icon_70/fire.svg', Title: '핫한톡'),
             Column(
               children: [
                 Row(children: [
                   HomeAvatar(),
-                  BubbleChat(),
+                  BubbleChat(
+                    maxLines: 1,
+                  ),
                 ]),
                 Row(children: [
                   HomeAvatar(),
-                  BubbleChat(),
+                  BubbleChat(
+                    maxLines: 1,
+                  ),
                 ])
               ],
             ),

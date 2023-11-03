@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
 
@@ -6,7 +7,12 @@ import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/HotTalk/ScoreAvatar.dart';
 
 class BubbleChat extends StatelessWidget {
-  const BubbleChat({super.key});
+  const BubbleChat({
+    Key? key,
+    required this.maxLines,
+  }) : super(key: key);
+
+  final double maxLines;
 
   @override
   Widget build(BuildContext context) {

@@ -82,7 +82,8 @@ class _TechnologyStackListState extends State<TechnologyStackList> {
                       width: 50,
                       height: 50,
                       decoration: ShapeDecoration(
-                        color: isClicked ? AppColors.primary_100 : Colors.white,
+                        color: Colors.white,
+                        // color: isClicked ? AppColors.primary_100 : Colors.white,
                         shape: RoundedRectangleBorder(
                           side: BorderSide(
                             width: 1,
@@ -103,6 +104,7 @@ class _TechnologyStackListState extends State<TechnologyStackList> {
                         ],
                       ),
                     ),
+                    
                       Text(
                         names[1],
                         style: TextStyle(

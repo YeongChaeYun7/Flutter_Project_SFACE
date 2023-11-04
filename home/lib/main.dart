@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/view/LoginPage/splashPage.dart';
-import 'package:home/view/LoginPage/loginPage.dart';
+import 'package:home/view/LoginPage/updatePage.dart';
+// import 'package:home/view/LoginPage/splashPage.dart';
+// import 'package:home/view/LoginPage/loginPage.dart';
 // import 'package:home/view/homePage.dart';
-import 'package:home/view/homePage/homePage.dart';
-import 'package:home/view/main_page.dart';
-import 'package:home/view/talk/DetailTalkPage.dart';
-import 'package:home/view/talk/ShimmerTalkPage.dart';
-import 'package:home/view/talk/TalkPage.dart';
-import 'package:home/widget/HotTalk/mainChat.dart';
+// import 'package:home/view/homePage/homePage.dart';
+// import 'package:home/view/main_page.dart';
+// import 'package:home/view/talk/DetailTalkPage.dart';
+// import 'package:home/view/talk/ShimmerTalkPage.dart';
+// import 'package:home/view/talk/TalkPage.dart';
+// import 'package:home/widget/HotTalk/mainChat.dart';
 // import 'package:home/view/catchup/ShimmerCatchupPage.dart';
 // import 'package:home/view/catchup/ShimmerCatchupPageAll.dart';
 // import 'package:home/view/talk/ShimmerTalkPage.dart';
 // import 'package:home/view/talk/TalkPage.dart';
 // import 'package:home/widget/HotTalk/HotTalkBar.dart';
 // import 'package:home/widget/Shimmer/ShimmerCatchup.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
 // import 'package:home/widget/Shimmer/ShimmerTalk.dart';
 
 void main() {
@@ -34,7 +34,8 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: const MainPage(),
+      // home: UpdatePage(),
+      home: SplashPage(),
     );
   }
 }

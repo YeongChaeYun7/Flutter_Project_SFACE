@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:home/styles/app_colors.dart';
 
 class HomeAvatar extends StatelessWidget {
-  const HomeAvatar({super.key});
+  const HomeAvatar(
+      {super.key, required this.imagePath, required this.userClass});
+
+  final String imagePath;
+  final String userClass;
 
   @override
   Widget build(BuildContext context) {
@@ -13,9 +18,7 @@ class HomeAvatar extends StatelessWidget {
         child: Stack(children: [
           Align(
             alignment: Alignment.center,
-            child: SvgPicture.asset(
-              'assets/icon/avatar/Property 1=Default.svg',
-            ),
+            child: SvgPicture.asset(imagePath),
           ),
           Positioned(
             top: 63,
@@ -26,11 +29,11 @@ class HomeAvatar extends StatelessWidget {
               height: 16,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(6),
-                color: const Color.fromRGBO(51, 122, 255, 1),
+                color: AppColors.primary_80,
               ),
-              child: const Text(
-                '개발자 / 1기',
-                style: TextStyle(color: Colors.white, fontSize: 11),
+              child: Text(
+                ' $userClass ',
+                style: const TextStyle(color: Colors.white, fontSize: 11),
               ),
             ),
           )

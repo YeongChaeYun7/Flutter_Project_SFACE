@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:home/view/homePage/homePage.dart';
+
+import 'package:home/view/homePage/main_page.dart';
 import 'package:home/widget/Button/validateButton.dart';
 import 'package:home/widget/input/input.dart';
 import 'package:http/http.dart' as http;
@@ -106,7 +107,7 @@ class _LoginPageState extends State<LoginPage> {
             ElevatedButton(
                 onPressed: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (_) => const homePage()));
+                      MaterialPageRoute(builder: (_) => const MainPage()));
                 },
                 child: const Text('data')),
             ValidateButton(

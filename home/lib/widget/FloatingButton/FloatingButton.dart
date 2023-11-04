@@ -8,7 +8,7 @@ class FloatingButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 100),
+      margin: const EdgeInsets.only(bottom: 30),
       child: FloatingActionButton(
         backgroundColor: AppColors.primary_80,
         onPressed: () {},

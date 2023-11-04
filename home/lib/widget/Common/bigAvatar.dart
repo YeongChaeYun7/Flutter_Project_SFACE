@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-class SpacerAvatar extends StatelessWidget {
+class BigAvatar extends StatelessWidget {
   final String imagePath; // 아바타 이미지
   final String userClass;
 
-  SpacerAvatar({
+  BigAvatar({
     super.key, 
     required this.imagePath, 
     required this.userClass

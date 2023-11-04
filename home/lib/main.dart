@@ -1,23 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
-import 'package:home/view/CatchUP/hotCatchupPage.dart';
-import 'package:home/view/LoginPage/loginPage.dart';
-// import 'package:home/view/homePage.dart';
-import 'package:home/view/homePage/homePage.dart';
-import 'package:home/view/main_page.dart';
-import 'package:home/view/talk/DetailTalkPage.dart';
-import 'package:home/view/talk/ShimmerTalkPage.dart';
-import 'package:home/view/talk/TalkPage.dart';
-import 'package:home/widget/HotTalk/mainChat.dart';
-// import 'package:home/view/catchup/ShimmerCatchupPage.dart';
-// import 'package:home/view/catchup/ShimmerCatchupPageAll.dart';
-// import 'package:home/view/talk/ShimmerTalkPage.dart';
-// import 'package:home/view/talk/TalkPage.dart';
-// import 'package:home/widget/HotTalk/HotTalkBar.dart';
-// import 'package:home/widget/Shimmer/ShimmerCatchup.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
-// import 'package:home/widget/Shimmer/ShimmerTalk.dart';
+import 'package:home/view/homePage/main_page.dart';
 
 void main() {
   runApp(const MyApp());

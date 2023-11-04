@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 
-class FloatingButton extends StatelessWidget {
-  const FloatingButton({super.key});
+class FloatingButtonIcon extends StatelessWidget {
+  const FloatingButtonIcon({super.key});
 
   @override
   Widget build(BuildContext context) {

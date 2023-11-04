@@ -10,53 +10,51 @@ class AllCatchupPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Scaffold(
-        body: const SingleChildScrollView(
-          scrollDirection: Axis.vertical,
-          child: Column(
-            children: [
-              SizedBox(height: 3),
-              Search(),
-              TitleBar(
-                imagePath: 'assets/icon/icon_70/dart.svg',
-                Title: '핫한 캐치업',
-              ),
-              CatchupCard(
-                imagePath: 'assets/icon/icon_70/laptop.svg',
-                userClass: '개발자/1기',
-                userName: '신디',
-                userType: '수료생',
-              ),
-              SizedBox(height: 16),
-              TitleBar(
-                imagePath: 'assets/icon/icon_70/dart.svg',
-                Title: '캐치업!',
-              ),
-              CatchupCard(
-                imagePath: 'assets/icon/icon_70/laptop.svg',
-                userClass: '개발자/1기',
-                userName: '신디',
-                userType: '수료생',
-              ),
-              CatchupCard(
-                imagePath: 'assets/icon/icon_70/laptop.svg',
-                userClass: '개발자/1기',
-                userName: '신디',
-                userType: '수료생',
-              ),
-              CatchupCard(
-                imagePath: 'assets/icon/icon_70/laptop.svg',
-                userClass: '개발자/1기',
-                userName: '신디',
-                userType: '수료생',
-              ),
-            ],
-          ),
+    return Scaffold(
+      body: const SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: Column(
+          children: [
+            SizedBox(height: 3),
+            Search(),
+            TitleBar(
+              imagePath: 'assets/icon/icon_70/dart.svg',
+              Title: '핫한 캐치업',
+            ),
+            CatchupCard(
+              imagePath: 'assets/icon/icon_70/laptop.svg',
+              userClass: '개발자/1기',
+              userName: '신디',
+              userType: '수료생',
+            ),
+            SizedBox(height: 16),
+            TitleBar(
+              imagePath: 'assets/icon/icon_70/dart.svg',
+              Title: '캐치업!',
+            ),
+            CatchupCard(
+              imagePath: 'assets/icon/icon_70/laptop.svg',
+              userClass: '개발자/1기',
+              userName: '신디',
+              userType: '수료생',
+            ),
+            CatchupCard(
+              imagePath: 'assets/icon/icon_70/laptop.svg',
+              userClass: '개발자/1기',
+              userName: '신디',
+              userType: '수료생',
+            ),
+            CatchupCard(
+              imagePath: 'assets/icon/icon_70/laptop.svg',
+              userClass: '개발자/1기',
+              userName: '신디',
+              userType: '수료생',
+            ),
+          ],
         ),
-        bottomNavigationBar:
-            MyBottomNavigationBar(), // error. the constructor being called isn't a const constructor.
       ),
+      bottomNavigationBar:
+          MyBottomNavigationBar(), // error. the constructor being called isn't a const constructor.
     );
   }
 }

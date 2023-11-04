@@ -5,11 +5,8 @@ class SpacerAvatar extends StatelessWidget {
   final String imagePath; // 아바타 이미지
   final String userClass;
 
-  SpacerAvatar({
-    super.key, 
-    required this.imagePath, 
-    required this.userClass
-    });
+  const SpacerAvatar(
+      {super.key, required this.imagePath, required this.userClass});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +17,7 @@ class SpacerAvatar extends StatelessWidget {
         Align(
           alignment: Alignment.center,
           child: SvgPicture.asset(
-            this.imagePath,
+            imagePath,
           ),
         ),
         Positioned(
@@ -35,8 +32,8 @@ class SpacerAvatar extends StatelessWidget {
               color: const Color.fromRGBO(51, 122, 255, 1),
             ),
             child: Text(
-              this.userClass,
-              style: TextStyle(color: Colors.white, fontSize: 11),
+              userClass,
+              style: const TextStyle(color: Colors.white, fontSize: 11),
             ),
           ),
         )

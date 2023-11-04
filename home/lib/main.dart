@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
-import 'package:home/view/CatchUP/hotCatchupPage.dart';
+import 'package:home/view/LoginPage/splashPage.dart';
 import 'package:home/view/LoginPage/loginPage.dart';
 // import 'package:home/view/homePage.dart';
 import 'package:home/view/homePage/homePage.dart';

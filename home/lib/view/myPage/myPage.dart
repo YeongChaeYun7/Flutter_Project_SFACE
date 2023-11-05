@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
-
 import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
-
-import 'package:home/widget/Catchup/CatchupCard.dart';
-
-
-import 'package:home/widget/MyPage/MainCard/MainCard.dart';
-import 'package:home/widget/MyPage/MyCatchupCard.dart';
-import 'package:home/widget/MyPage/MyMogakcoCard.dart';
-
-import 'package:home/widget/MyPage/MyTalkCard.dart';
-import 'package:home/widget/MyPage/SettingCard.dart';
+import 'package:home/widget/MyPage/Main/MainCard.dart';
+import 'package:home/widget/MyPage/Main/MyCatchupMenu.dart';
+import 'package:home/widget/MyPage/Main/MyMogakcoMenu.dart';
+import 'package:home/widget/MyPage/Main/MyTalkMenu.dart';
+import 'package:home/widget/MyPage/Main/SettingMenu.dart';
 
 class myPage extends StatelessWidget {
   const myPage({super.key});
@@ -24,13 +18,13 @@ class myPage extends StatelessWidget {
           SizedBox(height: 20),
           MainCard(),
           SizedBox(height: 15),
-          MyTalkCard(),
+          MyTalkMenu(),
           SizedBox(height: 15),
-          MyCatchupCard(),
+          MyCatchupMenu(),
           SizedBox(height: 15),
-          MyNogakcoCard(),
+          MyMogakcoMenu(),
           SizedBox(height: 15),
-          SettingCard(),
+          SettingMenu(),
           SizedBox(height: 10),
         ]),
       ),

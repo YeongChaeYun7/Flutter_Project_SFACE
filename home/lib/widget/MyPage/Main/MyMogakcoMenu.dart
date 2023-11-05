@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/MyPage/DottedLinePackage.dart';
 
-class MyTalkCard extends StatelessWidget {
-  const MyTalkCard({
+class MyMogakcoMenu extends StatelessWidget {
+  const MyMogakcoMenu({
     super.key,
   });
 
@@ -12,7 +12,7 @@ class MyTalkCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
         child: Container(
-      height: 230,
+      height: 180,
       width: MediaQuery.of(context).size.width * 0.95,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(7),
@@ -26,17 +26,17 @@ class MyTalkCard extends StatelessWidget {
         ListTile(
           horizontalTitleGap: -10,
           leading: SvgPicture.asset(
-            'assets/icon/icon_20/fire.svg',
+            'assets/icon/icon_20/dart.svg',
           ),
           title: const Text(
-            '나의 톡!',
+            '나의 모각코!',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
         ),
         ListTile(
           dense: true,
           leading: const Text(
-            '내가 쓴 톡',
+            '내가 만든 그룹',
             style: TextStyle(fontSize: 16),
           ),
           trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
@@ -47,18 +47,7 @@ class MyTalkCard extends StatelessWidget {
         ListTile(
           dense: true,
           leading: const Text(
-            '좋아요 한 톡',
-            style: TextStyle(fontSize: 16),
-          ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
-        ),
-        DottedLinePackage(
-          lineLength: MediaQuery.of(context).size.width * 0.85,
-        ),
-        ListTile(
-          dense: true,
-          leading: const Text(
-            '내가 쓴 이어달린 톡',
+            '참여중인 그룹',
             style: TextStyle(fontSize: 16),
           ),
           trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),

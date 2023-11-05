@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/MyPage/DottedLinePackage.dart';
 
-class MyCatchupCard extends StatelessWidget {
-  const MyCatchupCard({
+class MyCatchupMenu extends StatelessWidget {
+  const MyCatchupMenu({
     super.key,
   });
 

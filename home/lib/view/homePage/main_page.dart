@@ -3,6 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/view/catchup/CatchupPage.dart';
 import 'package:home/view/homePage/homePage.dart';
 import 'package:home/view/myPage/myPage.dart';
+import 'package:home/view/talkPage/TalkPage.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -12,7 +13,7 @@ class MainPage extends StatelessWidget {
     List<Widget> pages = [
       const homePage(),
       const TalkPage(),
-      const CatchupPage(),
+      CatchupPage(),
       const myPage(),
     ];
     return Scaffold(

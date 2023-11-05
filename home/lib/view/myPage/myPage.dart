@@ -2,6 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
 
+import 'package:home/widget/Catchup/CatchupCard.dart';
+
+
 import 'package:home/widget/MyPage/MainCard/MainCard.dart';
 import 'package:home/widget/MyPage/MyCatchupCard.dart';
 import 'package:home/widget/MyPage/MyMogakcoCard.dart';

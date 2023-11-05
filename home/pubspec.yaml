@@ -83,8 +83,9 @@ flutter:
 
     - assets/icon/icon_20/
     - assets/icon/icon_20/msg.svg
-    - assets/icon/icon_20/Property 1=NotSelect.svg
-    - assets/icon/icon_20/Property 1=Like.svg
+    - assets/icon/icon_20/Property 1=circle_Like.svg
+    - assets/icon/icon_20/Property 1=circle_dislike.svg
+
     - assets/icon/icon_20/plus.svg
 
     - assets/icon/icon_30/

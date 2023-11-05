@@ -9,10 +9,7 @@ import 'package:home/widget/HotTalk/ScoreAvatar.dart';
 class BubbleChat extends StatelessWidget {
   const BubbleChat({
     Key? key,
-    required this.maxLines,
   }) : super(key: key);
-
-  final double maxLines;
 
   @override
   Widget build(BuildContext context) {
@@ -27,35 +24,32 @@ class BubbleChat extends StatelessWidget {
           backGroundColor: Colors.white,
           elevation: 0,
           child: Container(
-            height: 37,
             constraints: BoxConstraints(
-              maxWidth: MediaQuery.of(context).size.width * 0.61,
+              maxWidth: MediaQuery.of(context).size.width * 0.65,
             ),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
-                  width: 190,
+                  width: 230,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         '24분 전',
                         style: TextStyle(
-                            fontSize: 11, color: AppColors.neutral_40),
+                            fontSize: 12, color: AppColors.neutral_40),
                       ),
-                      SizedBox(height: 2),
+                      SizedBox(height: 10),
                       Text(
                         '근데 혹시 15일차 강의 푸신 분 있으면 좀 알려주세요. 뭐가 바뀌어야 하죠',
-                        style: TextStyle(fontSize: 13),
-                        overflow: TextOverflow.ellipsis,
                         maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(fontSize: 14),
                       ),
                     ],
                   ),
                 ),
-                // SizedBox(width: 20),
                 HeartIconButton(),
               ],
             ),

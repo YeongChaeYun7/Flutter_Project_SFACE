@@ -9,7 +9,7 @@ import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/Search/search.dart';
 
 class CatchupPage extends StatelessWidget {
-  const CatchupPage({super.key});
+  CatchupPage({super.key});
 
   @override
   Widget build(BuildContext context) {

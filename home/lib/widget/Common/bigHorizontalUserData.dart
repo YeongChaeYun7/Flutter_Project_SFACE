@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-// import 'package:flutter_svg/svg.dart';
 import 'package:home/widget/Common/GreyBox.dart';
-
-import 'package:home/widget/Spacer/SpacerAvatar.dart';
+import 'package:home/widget/Common/bigAvatar.dart';
 
 class BigUserData extends StatelessWidget {
   final String imagePath; // 아바타 이미지
@@ -21,7 +19,7 @@ class BigUserData extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SpacerAvatar(
+        BigAvatar(
           imagePath: imagePath,
           userClass: userClass,
         ),

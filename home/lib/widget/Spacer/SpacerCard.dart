@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/GreyBox.dart';
-import 'package:home/widget/Spacer/SpacerAvatar.dart';
+import 'package:home/widget/Common/bigAvatar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SpacerCard extends StatelessWidget {
@@ -42,7 +42,7 @@ class SpacerCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SpacerAvatar(imagePath: this.imagePath, userClass: this.userClass),
+                BigAvatar(imagePath: this.imagePath, userClass: this.userClass),
                 SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

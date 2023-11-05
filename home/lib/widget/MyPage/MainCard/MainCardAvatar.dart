@@ -6,23 +6,20 @@ import 'package:home/widget/Common/GreyBox.dart';
 class MainCardAvatar extends StatelessWidget {
   const MainCardAvatar(
       {super.key, required this.imagePath, required this.userClass});
-
   final String imagePath;
   final String userClass;
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
+    return Column(
+      children: [
       SizedBox(
         width: 100,
         height: 120,
         child: Stack(children: [
           Align(
             alignment: Alignment.center,
-            child: SvgPicture.asset(
-              imagePath,
-              height: 200,
-            ),
+            child: SvgPicture.asset(imagePath, height: 200,),
           ),
           Positioned(
             top: 100,
@@ -61,7 +58,7 @@ class MainCardAvatar extends StatelessWidget {
             style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 8),
-          GreyBox(text: '수료생'),
+        GreyBox(text: '수료생'),
         ],
       ),
     ]);

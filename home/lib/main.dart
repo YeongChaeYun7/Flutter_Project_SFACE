@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
-
-import 'package:home/view/homePage/main_page.dart';
+import 'package:home/view/homePage/homePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -19,7 +18,6 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Pretendard',
       ),
       home: MainPage(),
-      
     );
   }
 }

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 
-class MyPageScore extends StatelessWidget {
-  const MyPageScore(
+class MainCardScore extends StatelessWidget {
+  const MainCardScore(
       {super.key,
       required this.imagePath,
       required this.iconPath,

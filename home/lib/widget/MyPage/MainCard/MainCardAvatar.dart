@@ -3,10 +3,9 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 
-class myPageAvatar extends StatelessWidget {
-  const myPageAvatar(
+class MainCardAvatar extends StatelessWidget {
+  const MainCardAvatar(
       {super.key, required this.imagePath, required this.userClass});
-
   final String imagePath;
   final String userClass;
 
@@ -40,11 +39,12 @@ class myPageAvatar extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 0,
-            child: SvgPicture.asset('assets/icon/icon_30/editable.svg',  
-            height: 40, width: 40, 
-        
-        ))
+              right: 0,
+              child: SvgPicture.asset(
+                'assets/icon/icon_30/editable.svg',
+                height: 40,
+                width: 40,
+              ))
         ]),
       ),
       const SizedBox(
@@ -59,9 +59,7 @@ class myPageAvatar extends StatelessWidget {
           ),
           const SizedBox(width: 8),
         GreyBox(text: '수료생'),
-        
         ],
-        
       ),
     ]);
   }

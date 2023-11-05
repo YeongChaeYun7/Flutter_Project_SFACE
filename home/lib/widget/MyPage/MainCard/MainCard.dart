@@ -3,7 +3,6 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/MyPage/DottedLinePackage.dart';
-
 import 'package:home/widget/MyPage/MainCard/MainCardScore.dart';
 import 'package:home/widget/MyPage/MainCard/MainCardAvatar.dart';
 

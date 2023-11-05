@@ -36,6 +36,7 @@ dependencies:
   http : ^1.1.0
   flutter:
     sdk: flutter
+  dotted_line: ^3.2.2
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -100,7 +101,7 @@ flutter:
 
     - assets/icon/logo/Logo.svg
     - assets/icon/logo/Nav_Logo.svg
-
+    - assets/icon/tag/No.svg
     - assets/icon/tag/1st.svg
     - assets/icon/tag/2nd.svg
     - assets/icon/tag/3rd.svg

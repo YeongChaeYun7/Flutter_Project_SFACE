@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: homePage(),
+      home: MainPage(),
     );
   }
 }

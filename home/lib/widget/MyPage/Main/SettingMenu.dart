@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/MyPage/DottedLinePackage.dart';
 
-class SettingCard extends StatelessWidget {
-  const SettingCard({
+class SettingMenu extends StatelessWidget {
+  const SettingMenu({
     super.key,
   });
 

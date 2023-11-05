@@ -61,7 +61,7 @@ class homePage extends StatelessWidget {
               Title: '이달의 스페이서',
             ),
             // Wi<SpacerCardList>,
-            SpacerCardList(), // error. the constructor being called isn't a const constructor.
+            SpacerCardList(),
           ],
         ),
       ),

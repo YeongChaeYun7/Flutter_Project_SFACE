@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 
-class myPageAvatar extends StatelessWidget {
-  const myPageAvatar(
+class MainCardAvatar extends StatelessWidget {
+  const MainCardAvatar(
       {super.key, required this.imagePath, required this.userClass});
 
   final String imagePath;
@@ -12,15 +12,17 @@ class myPageAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
+    return Column(children: [
       SizedBox(
         width: 100,
         height: 120,
         child: Stack(children: [
           Align(
             alignment: Alignment.center,
-            child: SvgPicture.asset(imagePath, height: 200,),
+            child: SvgPicture.asset(
+              imagePath,
+              height: 200,
+            ),
           ),
           Positioned(
             top: 100,
@@ -40,11 +42,12 @@ class myPageAvatar extends StatelessWidget {
             ),
           ),
           Positioned(
-            right: 0,
-            child: SvgPicture.asset('assets/icon/icon_30/editable.svg',  
-            height: 40, width: 40, 
-        
-        ))
+              right: 0,
+              child: SvgPicture.asset(
+                'assets/icon/icon_30/editable.svg',
+                height: 40,
+                width: 40,
+              ))
         ]),
       ),
       const SizedBox(
@@ -58,10 +61,8 @@ class myPageAvatar extends StatelessWidget {
             style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
           ),
           const SizedBox(width: 8),
-        GreyBox(text: '수료생'),
-        
+          GreyBox(text: '수료생'),
         ],
-        
       ),
     ]);
   }

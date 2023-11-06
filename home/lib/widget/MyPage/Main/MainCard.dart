@@ -3,8 +3,8 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/MyPage/DottedLinePackage.dart';
-import 'package:home/widget/MyPage/Main/MainCardScore.dart';
 import 'package:home/widget/MyPage/Main/MainCardAvatar.dart';
+import 'package:home/widget/MyPage/Main/MainCardScore.dart';
 
 class MainCard extends StatelessWidget {
   const MainCard({super.key});

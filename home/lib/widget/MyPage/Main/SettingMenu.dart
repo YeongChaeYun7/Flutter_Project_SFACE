@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
+import 'package:home/view/homePage/homePage.dart';
 import 'package:home/widget/MyPage/DottedLinePackage.dart';
+import 'package:home/widget/MyPage/Popup/LogoutPopup.dart';
+import 'package:home/widget/MyPage/Popup/SignoutPopup.dart';
 
 class SettingMenu extends StatelessWidget {
   const SettingMenu({
@@ -39,11 +42,9 @@ class SettingMenu extends StatelessWidget {
             '내 정보 수정하기',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: IconButton(
-              icon: SvgPicture.asset(
-                'assets/icon/icon_20/Right.svg',
-              ),
-              onPressed: () {}),
+          trailing: SvgPicture.asset(
+            'assets/icon/icon_20/Right.svg',
+          ),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
@@ -54,41 +55,63 @@ class SettingMenu extends StatelessWidget {
             '비밀번호 변경',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: IconButton(
-              icon: SvgPicture.asset(
-                'assets/icon/icon_20/Right.svg',
-              ),
-              onPressed: () {}),
+          trailing: SvgPicture.asset(
+            'assets/icon/icon_20/Right.svg',
+          ),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
         ),
-        ListTile(
-          dense: true,
-          leading: const Text(
-            '로그아웃',
-            style: TextStyle(fontSize: 16),
+        GestureDetector(
+          onTap: () {
+            showDialog(
+              context: context,
+              builder: (BuildContext context) {
+                return LogoutPopup();
+              },
+            );
+          },
+          child: ListTile(
+            dense: true,
+            leading: const Text(
+              '로그아웃',
+              style: TextStyle(fontSize: 16),
+            ),
+            trailing: SvgPicture.asset(
+              'assets/icon/icon_20/Right.svg',
+            ),
           ),
-          trailing: IconButton(
-              icon: SvgPicture.asset(
-                'assets/icon/icon_20/Right.svg',
-              ),
-              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
         ),
-        ListTile(
-          dense: true,
-          leading: const Text(
-            '회원탈퇴',
-            style: TextStyle(fontSize: 16),
-          ),
-          trailing: IconButton(
-              icon: SvgPicture.asset(
+        GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: ((context) => homePage())),
+            );
+          },
+          child: GestureDetector(
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return SignOutPopup();
+                },
+              );
+            },
+            child: ListTile(
+              dense: true,
+              leading: const Text(
+                '회원탈퇴',
+                style: TextStyle(fontSize: 16),
+              ),
+              trailing: SvgPicture.asset(
                 'assets/icon/icon_20/Right.svg',
               ),
-              onPressed: () {}),
+            ),
+          ),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,

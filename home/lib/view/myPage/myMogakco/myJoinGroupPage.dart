@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'package:home/widget/Catchup/DateSortButton.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
-import 'package:home/widget/Mogakko/MogakkoCard.dart';
+import 'package:home/widget/Mogakco/MogakcoCard.dart';
 
 class MyJoinGroupPage extends StatelessWidget {
   const MyJoinGroupPage({super.key});

@@ -11,39 +11,64 @@ class MainCardAvatar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(children: [
-      SizedBox(
-        width: 100,
-        height: 120,
-        child: Stack(children: [
-          Align(
-            alignment: Alignment.center,
-            child: SvgPicture.asset(
-              imagePath,
-              height: 200,
+    return Stack(
+      children: [
+        Container(
+          margin: EdgeInsets.only(top: 20),
+          child: Column(children: [
+            Container(
+              width: 110,
+              height: 120,
+              child: Stack(children: [
+                Align(
+                  alignment: Alignment.center,
+                  child: SvgPicture.asset(
+                    imagePath,
+                    width: 200,
+                    height: 200,
+                  ),
+                ),
+                Positioned(
+                  top: 100,
+                  right: 16,
+                  left: 16,
+                  child: Container(
+                    alignment: Alignment.center,
+                    height: 16,
+                    decoration: BoxDecoration(
+                      borderRadius: BorderRadius.circular(6),
+                      color: AppColors.primary_80,
+                    ),
+                    child: Text(
+                      ' $userClass ',
+                      style: const TextStyle(color: Colors.white, fontSize: 11),
+                    ),
+                  ),
+                ),
+                const SizedBox(height: 3),
+              ]),
             ),
-          ),
-          Positioned(
-            top: 100,
-            right: 16,
-            left: 16,
-            child: Container(
-              alignment: Alignment.center,
-              height: 16,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6),
-                color: AppColors.primary_80,
-              ),
-              child: Text(
-                ' $userClass ',
-                style: const TextStyle(color: Colors.white, fontSize: 11),
-              ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text(
+                  '캐서린',
+                  style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                ),
+                const SizedBox(width: 8),
+                GreyBox(text: '수료생'),
+              ],
             ),
-          ),
-          Positioned(
-            right: 0,
+          ]),
+        ),
+        Positioned(
+          top: 0,
+          right: 130,
+          child: Container(
+            width: 80,
+            height: 80,
             child: IconButton(
-              splashRadius: 100,
+              splashRadius: 0.1,
               splashColor: AppColors.primary_10,
               onPressed: () {},
               icon: SvgPicture.asset(
@@ -53,22 +78,8 @@ class MainCardAvatar extends StatelessWidget {
               ),
             ),
           ),
-        ]),
-      ),
-      const SizedBox(
-        height: 3,
-      ),
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          const Text(
-            '캐서린',
-            style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
-          ),
-          const SizedBox(width: 8),
-          GreyBox(text: '수료생'),
-        ],
-      ),
-    ]);
+        ),
+      ],
+    );
   }
 }

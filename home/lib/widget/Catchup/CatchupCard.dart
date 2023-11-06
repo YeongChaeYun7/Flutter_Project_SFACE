@@ -82,7 +82,7 @@ class CatchupCard extends StatelessWidget {
                               showDialog(
                                 context: context,
                                 builder: (BuildContext context) {
-                                  return DeletePopup();
+                                  return CatchupDeletePopup();
                                 },
                               );
                             },

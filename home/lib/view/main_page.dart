@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/view/catchupPage/CatchupPage.dart';
 import 'package:home/view/homePage/homePage.dart';
-
 import 'package:home/view/talkPage/TalkPage.dart';
-import 'package:home/widget/Catchup/DeletePopup.dart';
+import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -15,20 +14,18 @@ class MainPage extends StatelessWidget {
       const homePage(),
       const TalkPage(),
       CatchupPage(),
-      const myPage(),
-      MyTalkPage(),
     ];
     return Scaffold(
-      appBar: AppBar(
-        centerTitle: false,
-        backgroundColor: Colors.white,
-        elevation: 0,
-        title: SvgPicture.asset(
-          'assets/icon/logo/Nav_Logo.svg',
-          width: 70,
+        appBar: AppBar(
+          centerTitle: false,
+          backgroundColor: Colors.white,
+          elevation: 0,
+          title: SvgPicture.asset(
+            'assets/icon/logo/Nav_Logo.svg',
+            width: 70,
+          ),
         ),
-      ),
-      body: pages[3],
-    );
+        bottomNavigationBar: MyBottomNavigationBar(),
+        body: pages[1]);
   }
 }

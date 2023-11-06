@@ -1,12 +1,11 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
-// import 'package:home/widget/grey_box.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/widget/Common/GreyBox.dart';
-// import 'package:home/widget/GreyBox.dart';
 import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/Common/miniHorizontalUserData.dart';
+import 'package:home/widget/Mogakco/DeletePopup.dart';
 
 class MoggakcoCard extends StatelessWidget {
   final String imagePath;// 아바타 이미지
@@ -47,7 +46,16 @@ class MoggakcoCard extends StatelessWidget {
             ],
           ),
           // SizedBox(height: 16),
-          Container(
+          GestureDetector(
+            onTap: () {
+              showDialog(
+                context: context,
+                builder: (BuildContext context) {
+                  return MogakcoDeletePopup();
+                },
+              );
+            },
+          child: Container(
             padding: EdgeInsets.only(left: 12, right: 10, top: 16),
             child: Column(
               children: [
@@ -104,22 +112,9 @@ class MoggakcoCard extends StatelessWidget {
               ],
             ),
           ),
+          ),
         ]
       )
     );
   } 
 }
-              //     RichText( // 폰트 적용도 안되고 간결하지도 않음
-              // text: TextSpan(
-              //   children: [
-              //     TextSpan(
-              //       text: '5',
-              //       style: TextStyle(color: AppColors.primary_100, fontWeight: FontWeight.bold),
-              //     ),
-              //     TextSpan(
-              //       text: '/6 참여',
-              //       style: TextStyle(color: AppColors.neutral_70),
-              //     )
-              //   ],
-              // ),
-              //     ),

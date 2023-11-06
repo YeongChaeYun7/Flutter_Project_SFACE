@@ -8,14 +8,15 @@ import 'package:home/widget/Shimmer/ShimmerContainer.dart';
 
 import 'package:shimmer/shimmer.dart';
 
-class ShimmercatchupPageAll extends StatelessWidget {
-  const ShimmercatchupPageAll({super.key});
+class ShimmerAllCatchupPage extends StatelessWidget {
+  const ShimmerAllCatchupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView(children: [
         const Search(),
+        SizedBox(height: 20),
         Shimmer.fromColors(
           baseColor: AppColors.neutral_20,
           highlightColor: Colors.white,
@@ -26,7 +27,7 @@ class ShimmercatchupPageAll extends StatelessWidget {
             ),
             const SizedBox(height: 15),
             const ShimmerCatchup(),
-            const SizedBox(height: 20),
+            const SizedBox(height: 70),
             ShimmerContainer(
               height: 18,
               width: MediaQuery.of(context).size.width * 0.95,
@@ -39,7 +40,7 @@ class ShimmercatchupPageAll extends StatelessWidget {
                 return const ShimmerCatchup();
               },
               separatorBuilder: (context, index) {
-                return const SizedBox(height: 8);
+                return const SizedBox(height: 30);
               },
               itemCount: 3,
             ),

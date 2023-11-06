@@ -5,11 +5,12 @@ import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
 import 'package:home/widget/Search/search.dart';
 import 'package:home/widget/Shimmer/ShimmerCatchup.dart';
 import 'package:home/widget/Shimmer/ShimmerContainer.dart';
+import 'package:home/widget/Shimmer/ShimmerRectangleContainer.dart';
 
 import 'package:shimmer/shimmer.dart';
 
-class ShimmercatchupPage extends StatelessWidget {
-  const ShimmercatchupPage({super.key});
+class ShimmerHotCatchupPage extends StatelessWidget {
+  const ShimmerHotCatchupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,18 +21,35 @@ class ShimmercatchupPage extends StatelessWidget {
           baseColor: AppColors.neutral_20,
           highlightColor: Colors.white,
           child: Column(children: [
-            ShimmerContainer(
-              height: 18,
-              width: MediaQuery.of(context).size.width * 0.95,
-            ),
-            const SizedBox(height: 15),
-            const ShimmerCatchup(),
             const SizedBox(height: 20),
             ShimmerContainer(
               height: 18,
               width: MediaQuery.of(context).size.width * 0.95,
             ),
-            const SizedBox(height: 15),
+            const SizedBox(height: 25),
+            const Row(
+              children: [
+                SizedBox(
+                  width: 15,
+                ),
+                ShimmerRectangleContainer(),
+                SizedBox(
+                  width: 15,
+                ),
+                ShimmerRectangleContainer(),
+                SizedBox(
+                  width: 15,
+                ),
+                ShimmerRectangleContainer(),
+                SizedBox(
+                  width: 15,
+                ),
+                ShimmerRectangleContainer()
+              ],
+            ),
+            SizedBox(
+              height: 70,
+            ),
             ListView.separated(
               physics: const NeverScrollableScrollPhysics(),
               shrinkWrap: true,
@@ -39,7 +57,7 @@ class ShimmercatchupPage extends StatelessWidget {
                 return const ShimmerCatchup();
               },
               separatorBuilder: (context, index) {
-                return const SizedBox(height: 8);
+                return const SizedBox(height: 40);
               },
               itemCount: 3,
             ),

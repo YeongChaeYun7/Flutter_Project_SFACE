@@ -39,7 +39,11 @@ class SettingMenu extends StatelessWidget {
             '내 정보 수정하기',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
@@ -50,7 +54,11 @@ class SettingMenu extends StatelessWidget {
             '비밀번호 변경',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
@@ -61,7 +69,11 @@ class SettingMenu extends StatelessWidget {
             '로그아웃',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
@@ -72,7 +84,11 @@ class SettingMenu extends StatelessWidget {
             '회원탈퇴',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,

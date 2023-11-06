@@ -39,7 +39,11 @@ class MyTalkMenu extends StatelessWidget {
             '내가 쓴 톡',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
@@ -50,7 +54,11 @@ class MyTalkMenu extends StatelessWidget {
             '좋아요 한 톡',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,
@@ -61,7 +69,11 @@ class MyTalkMenu extends StatelessWidget {
             '내가 쓴 이어달린 톡',
             style: TextStyle(fontSize: 16),
           ),
-          trailing: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+          trailing: IconButton(
+              icon: SvgPicture.asset(
+                'assets/icon/icon_20/Right.svg',
+              ),
+              onPressed: () {}),
         ),
         DottedLinePackage(
           lineLength: MediaQuery.of(context).size.width * 0.85,

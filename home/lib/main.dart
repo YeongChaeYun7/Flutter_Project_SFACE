@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
+import 'package:home/view/homePage/homePage.dart';
 import 'package:home/view/homePage/main_page.dart';
 
 void main() {
@@ -17,7 +18,7 @@ class MyApp extends StatelessWidget {
         scaffoldBackgroundColor: AppColors.stroke_line_5,
         fontFamily: 'Pretendard',
       ),
-      home: MainPage(),
+      home: homePage(),
     );
   }
 }

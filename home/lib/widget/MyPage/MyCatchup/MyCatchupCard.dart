@@ -1,27 +1,23 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
-import 'package:home/widget/Catchup/DeletePopup.dart';
-import 'package:home/widget/Catchup/ProfilePopup.dart';
+
 import 'package:home/widget/Catchup/ScoreLike.dart';
-import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/Common/miniHorizontalUserData.dart';
 
-class CatchupCard extends StatelessWidget {
+class MyCatchupCard extends StatelessWidget {
+  const MyCatchupCard(
+      {super.key,
+      required this.imagePath,
+      required this.userClass,
+      required this.userName,
+      required this.userType});
+
   final String imagePath; // 아바타 이미지
   final String userClass; // 개발자 / 1기
   final String userName; // 신디
   final String userType; // 수료생
-
-  const CatchupCard({
-    Key? key,
-    required this.userType,
-    required this.imagePath,
-    required this.userClass,
-    required this.userName,
-  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -52,51 +48,27 @@ class CatchupCard extends StatelessWidget {
                       Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          GestureDetector(
-                            onTap: () {
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return ProfilePopup(
-                                    imagePath: 'assets/icon/avatar/Property 1=Default.svg',
-                                    userClass: '개발자 / 1기',
-                                    userName: '우디',
-                                    userType: '수료생',
-                                  );
-                                },
-                              );
-                            },
-                            child: MiniUserData(
-                              imagePath: 'assets/icon/avatar/Property 1=Default.svg',
-                              userClass: '개발자 / 1기',
-                              userName: '우디',
-                              userType: '수료생',
-                            ),
+                          MiniUserData(
+                            imagePath:
+                                'assets/icon/avatar/Property 1=Default.svg',
+                            userClass: '개발자 / 1기',
+                            userName: '우디',
+                            userType: '수료생',
                           ),
-                          HeartIconButton(),
+                          SvgPicture.asset('assets/icon/icon_20/....svg'),
                         ],
                       ),
                       const SizedBox(height: 8),
-                          GestureDetector(
-                            onTap: () {
-                              showDialog(
-                                context: context,
-                                builder: (BuildContext context) {
-                                  return CatchupDeletePopup();
-                                },
-                              );
-                            },
-                            child: Text(
-                              '플러터 3.10 버전 업데이트 정리 지금부터 알려드릴게요!',
-                              style: TextStyle(
-                                color: AppColors.neutral_70,
-                                fontWeight: FontWeight.bold,
-                                fontSize: 18,
-                              ),
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 2,
-                            ),
-                          ),
+                      Text(
+                        '플러터 3.10 버전 업데이트 정리 지금부터 알려드릴게요!',
+                        style: TextStyle(
+                          color: AppColors.neutral_70,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 18,
+                        ),
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 2,
+                      ),
                       const SizedBox(height: 8),
                       const Text('2023.09.04',
                           style: TextStyle(
@@ -124,14 +96,11 @@ class CatchupCard extends StatelessWidget {
                   ),
                   // child: AspectRatio(
                   // aspectRatio: 1.0,// 가로 길이 고정.
-                  child: SvgPicture.asset(
-                    'assets/catchup/rocket.svg',
-                    height: double.infinity,
-                    fit: BoxFit.cover
-                    ),
-                  ),
-                  // ),
+                  child: SvgPicture.asset('assets/catchup/rocket.svg',
+                      height: double.infinity, fit: BoxFit.cover),
                 ),
+                // ),
+              ),
             ],
           ),
         ),

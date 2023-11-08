@@ -6,7 +6,7 @@ import 'package:home/widget/Common/TitleBar.dart';
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 
-import 'package:home/widget/Mogakko/MogakkoCard.dart';
+import 'package:home/widget/Mogakco/MogakcoCard.dart';
 import 'package:home/widget/Search/search.dart';
 // import 'package:home/widget/Spacer/SpacerCard.dart';
 import 'package:home/widget/Spacer/SpacerCardList.dart';
@@ -61,7 +61,7 @@ class homePage extends StatelessWidget {
               Title: '이달의 스페이서',
             ),
             // Wi<SpacerCardList>,
-            SpacerCardList(), // error. the constructor being called isn't a const constructor.
+            SpacerCardList(),
           ],
         ),
       ),

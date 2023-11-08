@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
-import 'package:home/view/catchup/CatchupPage.dart';
 import 'package:home/view/homePage/homePage.dart';
+import 'package:home/view/myPage/myPage.dart';
+import 'package:home/view/myPage/myTalk/myTalkPage.dart';
 import 'package:home/view/talkPage/TalkPage.dart';
 
 class MainPage extends StatelessWidget {
@@ -12,7 +13,8 @@ class MainPage extends StatelessWidget {
     List<Widget> pages = [
       const homePage(),
       const TalkPage(),
-      CatchupPage(),
+      const myPage(),
+      MyTalkPage(),
     ];
     return Scaffold(
       appBar: AppBar(
@@ -24,7 +26,7 @@ class MainPage extends StatelessWidget {
           width: 70,
         ),
       ),
-      body: pages[0],
+      body: pages[5],
     );
   }
 }

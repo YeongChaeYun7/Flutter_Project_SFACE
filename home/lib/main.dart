@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/view/homePage/homePage.dart';
+import 'package:home/view/homePage/main_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,3 +22,26 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+// void main() {
+//   runApp(MyApp());
+// }
+
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return MaterialApp(
+//       home: MyHomePage(),
+//     );
+//   }
+// }
+
+// class MyHomePage extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return Scaffold(
+//       body: Center(
+//         child: MakeGroupPage(),
+//       ),
+//     );
+//   }
+// }

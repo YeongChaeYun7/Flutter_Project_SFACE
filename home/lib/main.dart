@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:home/styles/app_colors.dart';
-import 'package:home/view/homePage/homePage.dart';
-import 'package:home/view/mogakkoPage/MakeGroupMogakkoPage.dart';
-import 'package:home/widget/Mogakco/GroupPostCard.dart';
-import 'package:home/widget/Mogakco/GroupPostOptionCard.dart';
-import 'package:home/widget/Mogakco/RecruitNumPopup.dart';
-import 'package:home/widget/Mogakco/RecruitStatusPopup.dart';
-
+import 'package:home/view/spacerPage/spacerPage.dart';
+import 'package:home/view/spacerPage/test.dart';
+import 'package:home/widget/Common/miniHorizontalUserData.dart';
 // void main() {
 //   runApp(const MyApp());
 // }
@@ -44,7 +39,13 @@ class MyHomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: MakeGroupPage(),
+        child: SpacerPage(),
+                            // child: MiniUserData(
+                            //   imagePath: 'assets/icon/avatar/Property 1=Default.svg',
+                            //   userClass: '개발자 / 1기',
+                            //   userName: '우디',
+                            //   userType: '수료생',
+                            // ),
       ),
     );
   }

@@ -2,8 +2,8 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
 
-class PostCard2 extends StatelessWidget {
-  PostCard2({Key? key}) : super(key: key);
+class PostCardOtion extends StatelessWidget {
+  PostCardOtion({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 
-class DeletePopup2 extends StatelessWidget {
-  const DeletePopup2(
+class DeletePopup extends StatelessWidget {
+  const DeletePopup(
       {super.key,
       required this.title,
       required this.subtitle,
@@ -107,14 +107,17 @@ class DeletePopup2 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return IconButton(
-      splashRadius: 18,
-      splashColor: AppColors.primary_10,
-      onPressed: () {
-        _showCustomDialog(context);
-      },
-      icon: SvgPicture.asset(
-        'assets/icon/icon_30/Delete_Float.svg',
+    return Container(
+      width: 55,
+      height: 55,
+      child: IconButton(
+        splashRadius: 18,
+        onPressed: () {
+          _showCustomDialog(context);
+        },
+        icon: SvgPicture.asset(
+          'assets/icon/icon_30/Delete_Float.svg',
+        ),
       ),
     );
   }

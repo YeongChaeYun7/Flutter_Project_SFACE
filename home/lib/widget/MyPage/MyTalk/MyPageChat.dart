@@ -6,7 +6,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 
 import 'package:home/widget/HotTalk/ScoreAvatar.dart';
-import 'package:home/widget/MyPage/Popup/DeletePopup2.dart';
+import 'package:home/widget/MyPage/Popup/DeletePopup.dart';
 
 class MyPageChat extends StatelessWidget {
   const MyPageChat({
@@ -72,19 +72,22 @@ class MyPageChat extends StatelessWidget {
         ),
       ),
       Positioned(
-        right: 55,
-        bottom: 40,
-        child: IconButton(
-          splashRadius: 18,
-          splashColor: AppColors.primary_10,
-          onPressed: () {},
-          icon: SvgPicture.asset('assets/icon/icon_30/editable.svg'),
+        right: 57,
+        bottom: 35,
+        child: Container(
+          width: 55,
+          height: 55,
+          child: IconButton(
+            splashRadius: 0.1,
+            onPressed: () {},
+            icon: SvgPicture.asset('assets/icon/icon_30/editable.svg'),
+          ),
         ),
       ),
       Positioned(
-          right: 30,
-          bottom: 40,
-          child: DeletePopup2(
+          right: 25,
+          bottom: 35,
+          child: DeletePopup(
             title: '내 톡을 삭제하시겠습니까?',
             subtitle: '한번 삭제하면 복구가 불가능합니다.',
             buttonname1: '취소하기',

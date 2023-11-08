@@ -10,7 +10,7 @@ class RecruitNumPopup extends StatefulWidget {
 }
 
 class _RecruitNumPopupState extends State<RecruitNumPopup> {
-  int count = 0; 
+  int count = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -52,11 +52,11 @@ class _RecruitNumPopupState extends State<RecruitNumPopup> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 30, 
-                    height: 30, 
+                    width: 30,
+                    height: 30,
                     decoration: BoxDecoration(
-                      color:  AppColors.neutral_5,  
-                      borderRadius: BorderRadius.circular(10),  
+                      color: AppColors.neutral_5,
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     child: Center(
                       child: Text(
@@ -64,19 +64,19 @@ class _RecruitNumPopupState extends State<RecruitNumPopup> {
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
-                          color:  AppColors.neutral_40,
+                          color: AppColors.neutral_40,
                         ),
                       ),
                     ),
                   ),
                   SizedBox(width: 3),
                   Text(
-                        "명",
-                        style: TextStyle(
-                          fontSize: 20,
-                          fontWeight: FontWeight.bold,
-                          color:  AppColors.neutral_60,
-                        ),
+                    "명",
+                    style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                      color: AppColors.neutral_60,
+                    ),
                   ),
                 ],
               ),

@@ -4,7 +4,7 @@ import 'package:flutter_chat_bubble/chat_bubble.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/HotTalk/ScoreAvatar.dart';
-import 'package:home/widget/MyPage/Popup/DeletePopup.dart';
+import 'package:home/widget/MyPage/Popup/DeleteIconPopup.dart';
 
 class EditableChat extends StatefulWidget {
   const EditableChat({
@@ -103,7 +103,7 @@ class _EditableChatState extends State<EditableChat> {
             Positioned(
                 right: 25,
                 bottom: 35,
-                child: DeletePopup(
+                child: DeleteIconPopup(
                   title: '내 톡을 삭제하시겠습니까?',
                   subtitle: '한번 삭제하면 복구가 불가능합니다.',
                   buttonname1: '취소하기',

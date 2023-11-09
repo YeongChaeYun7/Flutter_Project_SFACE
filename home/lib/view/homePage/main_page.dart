@@ -1,19 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:home/view/catchupPage/AllCatchupPage.dart';
 import 'package:home/view/homePage/homePage.dart';
-import 'package:home/view/homePage/test.dart';
-import 'package:home/view/myPage/myMogakco/myGroupEditPage.dart';
-import 'package:home/view/myPage/myMogakco/myGroupPage.dart';
-import 'package:home/view/myPage/myMogakco/myJoinGroupPage.dart';
-import 'package:home/view/myPage/myMogakco/myMokgakcoGroupEditPage.dart';
+import 'package:home/view/mogakkoPage/AllMogakcoPage.dart';
 import 'package:home/view/myPage/myPage.dart';
-import 'package:home/view/myPage/myTalk/myTalkDetailPage.dart';
-import 'package:home/view/myPage/myTalk/myTalkPage.dart';
 import 'package:home/view/talkPage/TalkPage.dart';
-import 'package:home/widget/HotTalk/EditableChat.dart';
-import 'package:home/widget/MyPage/MyTalk/EditableComment.dart';
-import 'package:home/widget/MyPage/MyTalk/MyCommentCard.dart';
-import 'package:home/widget/MyPage/MyTalk/OtherComment.dart';
 
 class MainPage extends StatelessWidget {
   const MainPage({super.key});
@@ -23,10 +14,9 @@ class MainPage extends StatelessWidget {
     List<Widget> pages = [
       const homePage(),
       const TalkPage(),
+      const AllCatchupPage(),
+      const AllMogakcoPage(),
       const myPage(),
-      MyTalkPage(),
-      MyGroupEditPage(),
-      MyMogakcoGroupEditPage(),
     ];
     return Scaffold(
       appBar: AppBar(
@@ -38,7 +28,7 @@ class MainPage extends StatelessWidget {
           width: 70,
         ),
       ),
-      body: pages[5],
+      body: pages[0],
     );
   }
 }

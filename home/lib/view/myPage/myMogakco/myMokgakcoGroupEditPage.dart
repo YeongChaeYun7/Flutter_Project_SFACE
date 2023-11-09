@@ -4,6 +4,7 @@ import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/Mogakco/GroupPostCard.dart';
 import 'package:home/widget/Mogakco/GroupPostOptionCard.dart';
+import 'package:home/widget/MyPage/Popup/ModifyPopup.dart';
 
 class MyMogakcoGroupEditPage extends StatelessWidget {
   const MyMogakcoGroupEditPage({super.key});
@@ -19,13 +20,19 @@ class MyMogakcoGroupEditPage extends StatelessWidget {
             const TitleBar2(Title: '그룹 수정하기'),
             const SizedBox(height: 8),
             PostCard(),
-            PostCardOtion(),
+            PostOtionCard(),
             Container(
               width: double.infinity,
               child: Padding(
                 padding: EdgeInsets.only(bottom: 100, right: 5, left: 5),
                 child: ElevatedButton(
                   onPressed: () {
+                    showDialog(
+                      context: context,
+                      builder: (BuildContext context) {
+                        return ModifyPopup();
+                      },
+                    );
                     // 동작
                   },
                   style: ButtonStyle(

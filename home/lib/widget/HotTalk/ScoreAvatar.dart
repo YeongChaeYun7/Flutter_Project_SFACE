@@ -9,65 +9,15 @@ class ScoreAvatar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        Row(
-          children: [
-            SizedBox(
-              width: 45,
-              child: Stack(children: [
-                SvgPicture.asset(
-                  'assets/icon/avatar/Property 1=Default.svg',
-                  height: 19,
-                ),
-                Positioned(
-                  left: 12,
-                  child: SvgPicture.asset(
-                    'assets/icon/avatar/Property 1=Default.svg',
-                    height: 19,
-                  ),
-                ),
-                Positioned(
-                  left: 24,
-                  child: SvgPicture.asset(
-                    'assets/icon/avatar/Property 1=Default.svg',
-                    height: 19,
-                  ),
-                ),
-              ]),
-            ),
-            SvgPicture.asset(
-              'assets/icon/icon_20/plus.svg',
-              height: 14,
-            ),
-            const Text(
-              '5',
-              style: TextStyle(fontSize: 11, color: AppColors.primary_80),
-            ),
-          ],
+        SvgPicture.asset(
+          'assets/icon/icon_20/Chat2.svg',
+          height: 20,
+        ),
+        const Text(
+          '5',
+          style: TextStyle(fontSize: 11, color: AppColors.primary_80),
         ),
         const SizedBox(width: 8),
-        SizedBox(
-          width: 45,
-          child: Stack(children: [
-            SvgPicture.asset(
-              'assets/icon/avatar/Property 1=Default.svg',
-              height: 19,
-            ),
-            Positioned(
-              left: 12,
-              child: SvgPicture.asset(
-                'assets/icon/avatar/Property 1=Default.svg',
-                height: 19,
-              ),
-            ),
-            Positioned(
-              left: 24,
-              child: SvgPicture.asset(
-                'assets/icon/avatar/Property 1=Default.svg',
-                height: 19,
-              ),
-            ),
-          ]),
-        ),
         SvgPicture.asset(
           'assets/icon/icon_20/Property 1=Like.svg',
           height: 14,

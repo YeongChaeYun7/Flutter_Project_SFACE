@@ -5,8 +5,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/Common/miniHorizontalUserData.dart';
-
-import 'package:home/widget/MyPage/Popup/DeletePopup.dart';
+import 'package:home/widget/MyPage/Popup/DeleteIconPopup.dart';
 
 class MymogakcoEditCard extends StatefulWidget {
   final String imagePath; // 아바타 이미지
@@ -161,7 +160,7 @@ class _MymogakcoEditCardState extends State<MymogakcoEditCard> {
         Positioned(
             right: 8,
             top: 0,
-            child: DeletePopup(
+            child: DeleteIconPopup(
               title: '내 톡을 삭제하시겠습니까?',
               subtitle: '한번 삭제하면 복구가 불가능합니다.',
               buttonname1: '취소하기',

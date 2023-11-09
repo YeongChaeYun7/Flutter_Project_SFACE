@@ -9,29 +9,6 @@ class ScoreLike extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        SizedBox(
-          width: 45,
-          child: Stack(children: [
-            SvgPicture.asset(
-              'assets/icon/avatar/Property 1=Default.svg',
-              height: 19,
-            ),
-            Positioned(
-              left: 12,
-              child: SvgPicture.asset(
-                'assets/icon/avatar/Property 1=Default.svg',
-                height: 19,
-              ),
-            ),
-            Positioned(
-              left: 24,
-              child: SvgPicture.asset(
-                'assets/icon/avatar/Property 1=Default.svg',
-                height: 19,
-              ),
-            ),
-          ]),
-        ),
         SvgPicture.asset(
           'assets/icon/icon_20/Property 1=Like.svg',
           height: 14,

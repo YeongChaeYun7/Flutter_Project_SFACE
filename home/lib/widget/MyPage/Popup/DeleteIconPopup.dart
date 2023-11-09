@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 
-class DeletePopup extends StatelessWidget {
-  const DeletePopup(
+class DeleteIconPopup extends StatelessWidget {
+  const DeleteIconPopup(
       {super.key,
       required this.title,
       required this.subtitle,

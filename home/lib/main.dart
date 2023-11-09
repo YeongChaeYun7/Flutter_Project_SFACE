@@ -14,7 +14,6 @@
 // }
 
 // class _MyAppState extends State<MyApp> {
-  
 
 //   @override
 //   Widget build(BuildContext context) {
@@ -23,9 +22,7 @@
 //     );}}
 
 import 'package:flutter/material.dart';
-import 'package:home/styles/app_colors.dart';
-import 'package:home/view/mogakkoPage/DetailMogakcoPage.dart';
-import 'package:home/widget/Mogakco/GroupParticipationPopup.dart';
+import 'package:home/view/homePage/main_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -35,7 +32,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: DetailHotMogackoPage(),
+      home: MainPage(),
     );
   }
 }

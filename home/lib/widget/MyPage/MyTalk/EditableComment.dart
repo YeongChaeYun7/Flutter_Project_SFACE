@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/bigHorizontalUserData.dart';
-import 'package:home/widget/MyPage/Popup/DeletePopup.dart';
+import 'package:home/widget/MyPage/Popup/DeleteIconPopup.dart';
 
 class EditableComment extends StatefulWidget {
   EditableComment({super.key});
@@ -37,7 +37,7 @@ class _EditableCommentState extends State<EditableComment> {
                     icon: SvgPicture.asset('assets/icon/icon_30/editable.svg'),
                   ),
                 ),
-                DeletePopup(
+                DeleteIconPopup(
                   title: '내 톡을 삭제하시겠습니까?',
                   subtitle: '한번 삭제하면 복구가 불가능합니다.',
                   buttonname1: '취소하기',

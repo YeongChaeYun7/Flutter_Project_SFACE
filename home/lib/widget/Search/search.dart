@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home/styles/app_colors.dart';
 
 class Search extends StatefulWidget {
   const Search({super.key});
@@ -19,7 +20,7 @@ class _MyWidgetState extends State<Search> {
             filled: true,
             fillColor: Colors.white,
             hintText: '내용 검색하기',
-            hintStyle: TextStyle(color: Colors.grey.shade300),
+            hintStyle: const TextStyle(color: AppColors.neutral_10),
             prefixIcon: Icon(
               Icons.search,
               size: 25,

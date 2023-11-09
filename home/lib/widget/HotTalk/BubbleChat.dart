@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 import 'package:flutter_chat_bubble/chat_bubble.dart';
 
@@ -6,7 +7,9 @@ import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/HotTalk/ScoreAvatar.dart';
 
 class BubbleChat extends StatelessWidget {
-  const BubbleChat({super.key});
+  const BubbleChat({
+    Key? key,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,35 +24,32 @@ class BubbleChat extends StatelessWidget {
           backGroundColor: Colors.white,
           elevation: 0,
           child: Container(
-            height: 37,
             constraints: BoxConstraints(
-              maxWidth: MediaQuery.of(context).size.width * 0.61,
+              maxWidth: MediaQuery.of(context).size.width * 0.65,
             ),
             child: const Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 SizedBox(
-                  width: 190,
+                  width: 230,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
                         '24분 전',
                         style: TextStyle(
-                            fontSize: 11, color: AppColors.neutral_40),
+                            fontSize: 12, color: AppColors.neutral_40),
                       ),
-                      SizedBox(height: 2),
+                      SizedBox(height: 10),
                       Text(
                         '근데 혹시 15일차 강의 푸신 분 있으면 좀 알려주세요. 뭐가 바뀌어야 하죠',
-                        style: TextStyle(fontSize: 13),
-                        overflow: TextOverflow.ellipsis,
                         maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: TextStyle(fontSize: 14),
                       ),
                     ],
                   ),
                 ),
-                // SizedBox(width: 20),
                 HeartIconButton(),
               ],
             ),

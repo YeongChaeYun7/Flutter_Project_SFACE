@@ -3,7 +3,19 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/view/catchupPage/AllCatchupPage.dart';
 import 'package:home/view/homePage/homePage.dart';
 import 'package:home/view/mogakkoPage/AllMogakcoPage.dart';
+import 'package:home/view/myPage/myCatchup/myCatchupPage.dart';
+import 'package:home/view/myPage/myCatchup/myLikeCatchupPage.dart';
+import 'package:home/view/myPage/myMogakco/myGroupEditPage.dart';
+import 'package:home/view/myPage/myMogakco/myGroupPage.dart';
+import 'package:home/view/myPage/myMogakco/myJoinGroupPage.dart';
+import 'package:home/view/myPage/myMogakco/myJoinMogakcoPage.dart';
+import 'package:home/view/myPage/myMogakco/myMokgakcoGroupEditPage.dart';
 import 'package:home/view/myPage/myPage.dart';
+import 'package:home/view/myPage/myTalk/myCommentPage.dart';
+import 'package:home/view/myPage/myTalk/myLikePage.dart';
+import 'package:home/view/myPage/myTalk/myTalkDetailPage.dart';
+import 'package:home/view/myPage/myTalk/myTalkPage.dart';
+import 'package:home/view/spacerPage/spacerPage.dart';
 import 'package:home/view/talkPage/TalkPage.dart';
 
 class MainPage extends StatelessWidget {
@@ -28,7 +40,7 @@ class MainPage extends StatelessWidget {
           width: 70,
         ),
       ),
-      body: pages[0],
+      body: pages[4],
     );
   }
 }

@@ -151,7 +151,9 @@ class _MymogakcoEditCardState extends State<MymogakcoEditCard> {
             height: 55,
             child: IconButton(
               splashRadius: 0.1,
-              onPressed: () {},
+              onPressed: () {
+                // MyMogakcoGroupEditPage로 이동
+              },
               icon: SvgPicture.asset('assets/icon/icon_30/editable.svg'),
             ),
           ),

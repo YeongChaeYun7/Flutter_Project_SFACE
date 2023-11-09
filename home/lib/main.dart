@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:home/styles/app_colors.dart';
 import 'package:home/view/LoginPage/SignupComplPage.dart';
 import 'package:home/view/LoginPage/loginPage.dart';
 import 'package:home/view/LoginPage/splashPage.dart';
@@ -17,11 +16,11 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
         routes: {
-          '/' : (context) => SplashPage(),
-          '/login' : (context) => const LoginPage(),
-          '/home' : (context) => const MainPage(),
-          '/talk' : (context) => const TalkPage(),
-          '/SignUpComplete' : (context) => SignUPCompletePage(),
+          '/': (context) => SplashPage(),
+          '/login': (context) => const LoginPage(),
+          '/home': (context) => const MainPage(),
+          '/talk': (context) => const TalkPage(),
+          '/SignUpComplete': (context) => SignUPCompletePage(),
         },
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,

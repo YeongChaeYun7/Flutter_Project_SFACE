@@ -26,7 +26,8 @@ class SpacerBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: 4,
+      shrinkWrap: true,
+      itemCount: 5,
       itemBuilder: (context, index) {
         return Container(
           margin: EdgeInsets.only(top: 15),
@@ -55,14 +56,15 @@ class SpacerBar extends StatelessWidget {
                       userType: this.userData[3],
                     ),
                   ),
-                  Stack(
-                    children: [
-                      Positioned(
-                        right: 0,
-                        child: SvgPicture.asset(tagimagePath[index]),
-                      ),
-                    ],
-                  ),
+                  // TODO 얘가 문제
+                  // Stack(
+                  //   children: [
+                  //     Positioned(
+                  //       right: 0,
+                  //       child: SvgPicture.asset(tagimagePath[index]),
+                  //     ),
+                  //   ],
+                  // ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[

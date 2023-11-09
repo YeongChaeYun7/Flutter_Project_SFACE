@@ -11,38 +11,43 @@ class SpacerPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
+    final size = MediaQuery.of(context).size;
     return Scaffold(
       body:Stack(
-        children: [
-          Container(
-            width: MediaQuery.of(context).size.width,
-          height: MediaQuery.of(context).size.height*0.9,
-          child: CustomPaint(
-            painter: MyPainter(),
-             child: Column(
-               mainAxisAlignment: MainAxisAlignment.start,
-               crossAxisAlignment: CrossAxisAlignment.center,
-               children: [
-                 //WhiteTitleBar(Title: '이달의 스페이서'),
-                 SizedBox(height: 20),
-                 SvgPicture.asset(
-                   'assets/graphic/Graphic4.svg',
-                   height: 80,
-                   width: 80,
-                 ),
-                 SizedBox(height: 20),
-               ],
-             ),
-            ),
+        children:[Container(
+        width: MediaQuery.of(context).size.width,
+        height: MediaQuery.of(context).size.height*0.9,
+        child: CustomPaint(
+          painter: MyPainter(),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              //WhiteTitleBar(Title: '이달의 스페이서'),
+              SizedBox(height: 20),
+              SvgPicture.asset(
+                'assets/graphic/Graphic4.svg',
+                height: 80,
+                width: 80,
+              ),
+              SizedBox(height: 20),
+            ],
           ),
-          SizedBox(height: MediaQuery.of(context).size.height*0.6,
-              child: Top3SpacerCardList()),
-          // Expanded(
-          //   // child: SpacerBar( userData: ['assets/icon/avatar/Property 1=Default.svg','영채','개발자/1기','수료생'], ),
-          // ),
-        ],
-      )
+        ),
+      ),
+        SizedBox(height: MediaQuery.of(context).size.height*0.6,
+            child: Top3SpacerCardList()),
+        Stack(
+          children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 330),
+              child: Expanded(
+                child: SpacerBar( userData: ['assets/icon/avatar/Property 1=Default.svg','영채','개발자/1기','수료생'], ),
+                ),
+            ),
+            ],
+          ),
+      ],)
     );
   }
 }

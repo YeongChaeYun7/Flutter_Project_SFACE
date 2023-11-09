@@ -1,7 +1,7 @@
 // 핫한 모각코
 import 'package:flutter/material.dart';
-import 'package:home/widget/Catchup/DateSortButton.dart';
 import 'package:home/widget/Catchup/TechnologyStackList.dart';
+import 'package:home/widget/Common/SortButton.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/Common/IconFloatingButton.dart';
 import 'package:home/widget/Mogakco/MogakcoCard.dart';
@@ -25,7 +25,7 @@ class HotMogackoPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                DateSortButton(),
+                SortButton(),
               ],
             ),
             const SizedBox(height: 8),

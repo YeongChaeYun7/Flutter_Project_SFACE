@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home/widget/Catchup/CatchupCard.dart';
-import 'package:home/widget/Catchup/DateSortButton.dart';
+import 'package:home/widget/Common/SortButton.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 
 class MyLikeCatchupPage extends StatelessWidget {
@@ -16,7 +16,7 @@ class MyLikeCatchupPage extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            DateSortButton(),
+            SortButton(),
           ],
         ),
         Expanded(

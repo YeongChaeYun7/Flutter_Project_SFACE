@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home/widget/Catchup/DateSortButton.dart';
+import 'package:home/widget/Common/SortButton.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
@@ -17,7 +17,7 @@ class MyLikePage extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            DateSortButton(),
+            SortButton(),
           ],
         ),
         ListView.separated(

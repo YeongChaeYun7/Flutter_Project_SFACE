@@ -68,11 +68,10 @@ class DetailHotMogackoPage extends StatelessWidget {
                       padding: EdgeInsets.only(bottom: 100, right: 5, left: 5),
                       child: ElevatedButton(
                         onPressed: () {
-                          // 참여하기 버튼 눌렀을 때 팝업 띄우기
                           showDialog(
                             context: context,
                             builder: (BuildContext context) {
-                              return GroupParticipationPopup(); // 팝업 위젯을 여기에 넣어줘
+                              return GroupParticipationPopup(); 
                             },
                           );
                         },

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:home/widget/Catchup/DateSortButton.dart';
+import 'package:home/widget/Common/SortButton.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 
 import 'package:home/widget/MyPage/MyTalk/MyCommentCard.dart';
@@ -17,7 +17,7 @@ class MyCommentPage extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            DateSortButton(),
+            SortButton(),
           ],
         ),
         Expanded(

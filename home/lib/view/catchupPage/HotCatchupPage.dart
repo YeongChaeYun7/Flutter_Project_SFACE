@@ -1,8 +1,8 @@
 // 핫한 캐치업
 import 'package:flutter/material.dart';
 import 'package:home/widget/Catchup/CatchupCard.dart';
-import 'package:home/widget/Catchup/DateSortButton.dart';
 import 'package:home/widget/Catchup/TechnologyStackList.dart';
+import 'package:home/widget/Common/SortButton.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/Search/search.dart';
 
@@ -23,7 +23,7 @@ class HotCatchupPage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                DateSortButton(),
+                SortButton(),
               ],
             ),
             const SizedBox(height: 8),

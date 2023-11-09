@@ -17,13 +17,19 @@ class BigAvatar extends StatelessWidget {
     return SizedBox(
       width: 100,
       height: 80,
-      child: Stack(children: [
-        Align(
-          alignment: Alignment.center,
-          child: SvgPicture.asset(
-            this.imagePath,
+      child: Stack(
+        children: [
+          Align(
+            alignment: Alignment.center,
+            child: CircleAvatar(
+              backgroundColor: AppColors.primary_10,
+              radius: 35,
+              child: SvgPicture.asset(this.imagePath,
+              height: 50,
+              width: 50,
+              ),
+            ),
           ),
-        ),
         Positioned(
           top: 63,
           right: 16,

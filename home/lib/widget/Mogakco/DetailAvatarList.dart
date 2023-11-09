@@ -12,33 +12,39 @@ class DetailAvatarList extends StatelessWidget {
     required this.userClassList,
     required this.userNameList,
   });
+
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(
-      scrollDirection: Axis.horizontal,
-      itemCount: imagePaths.length,
-      itemBuilder: (context, index) {
-        return Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              BigAvatar(
-                imagePath: imagePaths[index],
-                userClass: userClassList[index],
-              ),
-              Text(
-                userNameList.length > index ? userNameList[index] : "    ", // 이름이 없는 경우
-                style: TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                  color: AppColors.neutral_60,
+    return Container(
+      height: 150,
+      width: double.infinity, // 변경된 부분: 화면 전체 너비를 사용하도록 수정
+      child: ListView.builder(
+        scrollDirection: Axis.horizontal,
+        itemCount: imagePaths.length,
+        itemBuilder: (context, index) {
+          return Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                BigAvatar(
+                  imagePath: imagePaths[index],
+                  userClass: userClassList[index],
                 ),
-              ),
-            ],
-          ),
-        );
-      },
+                SizedBox(height: 3), // 이미지와 텍스트 사이에 간격을 추가
+                Text(
+                  userNameList.length > index ? userNameList[index] : "    ",
+                  style: TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.bold,
+                    color: AppColors.neutral_60,
+                  ),
+                ),
+              ],
+            ),
+          );
+        },
+      ),
     );
   }
 }

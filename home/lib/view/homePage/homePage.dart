@@ -40,7 +40,7 @@ class homePage extends StatelessWidget {
               imagePath: 'assets/icon/icon_70/dart.svg',
               Title: '핫한 캐치업',
             ),
-            const CatchupCard(
+            CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
               userClass: '개발자/1기',
               userName: '신디',

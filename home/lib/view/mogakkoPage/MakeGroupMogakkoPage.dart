@@ -19,7 +19,7 @@ class MakeGroupPage extends StatelessWidget {
             const TitleBar2(Title: '그룹 만들기'),
             const SizedBox(height: 8),
             PostCard(),
-            PostCard2(),
+            PostOtionCard(),
             Container(
             width: double.infinity, 
             child: Padding(

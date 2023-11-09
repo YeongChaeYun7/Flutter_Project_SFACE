@@ -1,4 +1,8 @@
+// 캐치업 카드
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+// import 'dart:developer';
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
@@ -8,20 +12,36 @@ import 'package:home/widget/Catchup/ScoreLike.dart';
 import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/Common/miniHorizontalUserData.dart';
+import 'package:dio/dio.dart';
 
-class CatchupCard extends StatelessWidget {
+class CatchupCard extends StatefulWidget {
   final String imagePath; // 아바타 이미지
   final String userClass; // 개발자 / 1기
   final String userName; // 신디
-  final String userType; // 수료생
-
-  const CatchupCard({
+  final String userType;  CatchupCard({
     Key? key,
     required this.userType,
     required this.imagePath,
     required this.userClass,
     required this.userName,
   }) : super(key: key);
+
+  @override
+  State<CatchupCard> createState() => _CatchupCardState();
+}
+
+class _CatchupCardState extends State<CatchupCard> {
+ // 수료생
+  final dio = Dio();
+    @override
+  void initState() {
+    testFunc();
+    super.initState();
+  }
+  void testFunc() async {
+    final response = await dio.get('https://dev.sniperfactory.com/api/catchup?filter=');
+    print(response.data.toString());
+  }
 
   @override
   Widget build(BuildContext context) {

@@ -7,7 +7,8 @@ import 'package:home/view/myPage/myPage.dart';
 import 'package:home/view/talkPage/TalkPage.dart';
 
 class MainPage extends StatelessWidget {
-  const MainPage({super.key});
+  final int index;
+  const MainPage({super.key, required this.index});
 
   @override
   Widget build(BuildContext context) {
@@ -20,6 +21,7 @@ class MainPage extends StatelessWidget {
     ];
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         centerTitle: false,
         backgroundColor: Colors.white,
         elevation: 0,
@@ -28,7 +30,7 @@ class MainPage extends StatelessWidget {
           width: 70,
         ),
       ),
-      body: pages[0],
+      body: pages[index],
     );
   }
 }

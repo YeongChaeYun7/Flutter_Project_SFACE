@@ -11,7 +11,10 @@ class TitleBar2 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: const Icon(Icons.navigate_before),
+      leading: GestureDetector(child: const Icon(Icons.navigate_before),
+      onTap: (){
+        Navigator.of(context).pop();
+      }),
       title: Text(
         this.Title,
         style: TextStyle(

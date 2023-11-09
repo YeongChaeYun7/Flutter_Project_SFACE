@@ -24,15 +24,19 @@ class SpacerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
+    print(size.height);
+    print(size.width);
     return Stack(
       children: [
         Container(
           margin: EdgeInsets.only(top:22),
           child: Container(
-            height: 180,
-            width: 160,
-            padding: EdgeInsets.all(16.0),
-            margin: EdgeInsets.symmetric(horizontal: 8.0),
+            height: 165.4,
+            width: 134,
+            padding: const EdgeInsets.all(16.0),
+            margin: const EdgeInsets.symmetric(horizontal: 8.0),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(8.0),

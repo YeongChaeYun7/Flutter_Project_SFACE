@@ -11,6 +11,7 @@ class AllCatchupPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
         child: Column(
@@ -20,6 +21,7 @@ class AllCatchupPage extends StatelessWidget {
             TitleBar(
               imagePath: 'assets/icon/icon_70/dart.svg',
               Title: '핫한 캐치업',
+              url: '/catchup/hot',
             ),
             CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
@@ -31,6 +33,7 @@ class AllCatchupPage extends StatelessWidget {
             TitleBar(
               imagePath: 'assets/icon/icon_70/dart.svg',
               Title: '캐치업!',
+              url:'/catchup/catchup'
             ),
             CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',

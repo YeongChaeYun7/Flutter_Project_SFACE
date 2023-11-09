@@ -43,6 +43,7 @@ class homePage extends StatelessWidget {
             const TitleBar(
               imagePath: 'assets/icon/icon_70/fire.svg',
               Title: '핫한 톡',
+              url: '/talk',
             ),
 
             Column(children: [
@@ -68,6 +69,7 @@ class homePage extends StatelessWidget {
             const TitleBar(
               imagePath: 'assets/icon/icon_70/dart.svg',
               Title: '핫한 캐치업',
+              url: '/catchup',
             ),
             CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
@@ -78,6 +80,7 @@ class homePage extends StatelessWidget {
             const TitleBar(
               imagePath: 'assets/icon/icon_70/letter.svg',
               Title: '핫한 모각코',
+              url: '/mogakko',
             ),
             const MoggakcoCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
@@ -88,6 +91,7 @@ class homePage extends StatelessWidget {
             const TitleBar(
               imagePath: 'assets/icon/icon_70/laptop.svg',
               Title: '이달의 스페이서',
+              url: '/spacer',
             ),
             // Wi<SpacerCardList>,
             SpacerCardList(),

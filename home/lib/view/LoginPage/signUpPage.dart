@@ -34,7 +34,8 @@ class _SignUpPageState extends State<SignUpPage> {
   Future<bool> SignUp(String name, String email, String password, String phoneNumber) async {
     if (canSignUp) {
       final Uri apiUri = Uri.parse('https://dev.sniperfactory.com/api/auth/signup');
-      final response = await http.post(apiUri, body: {'name':name, 'email': email, 'password':password,"phone":phoneNumber});
+      final response = await http.post(apiUri, headers: {"content-type":"application/json"},
+          body: json.encode({"name":name, "email": email, "password":password,"phone":phoneNumber}));
       if (response.statusCode == 200) {
         final responseData = json.decode(response.body);
         if (responseData['status']) {

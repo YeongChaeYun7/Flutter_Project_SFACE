@@ -7,11 +7,12 @@ import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/Search/search.dart';
 
 class CatchupPage extends StatelessWidget {
-  CatchupPage({super.key});
+  const CatchupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
+    return Scaffold(
+        body : SingleChildScrollView(
       scrollDirection: Axis.vertical,
       child: Column(
         children: [
@@ -53,6 +54,6 @@ class CatchupPage extends StatelessWidget {
           ),
         ],
       ),
-    );
+    ));
   }
 }

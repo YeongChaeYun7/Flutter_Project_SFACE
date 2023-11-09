@@ -11,9 +11,10 @@ class WhiteTitleBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      leading: const Icon(Icons.navigate_before,
-      color: Colors.white,
-      ),
+      leading: GestureDetector(child: const Icon(Icons.navigate_before, color: Colors.white),
+          onTap: (){
+            Navigator.of(context).pop();
+          }),
       title: Text(
         this.Title,
         style: TextStyle(

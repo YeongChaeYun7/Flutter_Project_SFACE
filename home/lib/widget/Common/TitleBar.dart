@@ -4,11 +4,12 @@ import 'package:flutter_svg/svg.dart';
 class TitleBar extends StatelessWidget {
   final String imagePath;// 이미지 경로
   final String Title;
+  final String? url;
 
   const TitleBar({
     Key? key,
     required this.imagePath, 
-    required this.Title,
+    required this.Title,  this.url,
     }) : super(key: key);
 
   @override
@@ -29,7 +30,13 @@ class TitleBar extends StatelessWidget {
               fontSize: 18,
             ),
           ),
-          trailing: const Icon(Icons.navigate_next),
+          trailing: GestureDetector(child:
+          Icon(Icons.navigate_next),
+          onTap: () {
+            if (url != null){
+            Navigator.of(context).pushNamed(url!);
+            }
+          },),
         ),
       ],
     );

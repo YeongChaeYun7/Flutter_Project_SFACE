@@ -29,32 +29,38 @@ class Top3SpacerCardList extends StatelessWidget {
     ],
   ];
 
+  double left = 10;
+
   @override
   Widget build(BuildContext context) {
 
-    return Container(
-      // width: MediaQuery.of(context).size.width * 0.97,
-      width: 1000,
-      child: Stack(
-        children: [ 
-          Positioned(
-            left: 2 * (MediaQuery.of(context).size.width / 3),
+    final size = MediaQuery.of(context).size;
+    return Expanded(
+      // width: size.width,
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: [
+          Container(
+            width: size.width * 0.333,
+            height: size.width * 0.333 + 59,
             child: Resize(
-              scale: 0.7, 
+              scale:0.9,
               originalWidget: SpacerCard( // 3등
-              imagePath: spacerCardData[2][0],
-              userClass: spacerCardData[2][1],
-              userName: spacerCardData[2][2],
-              userType: spacerCardData[2][3],
-              tagimagePath: spacerCardData[2][4],
-            ),
-            ),
+                imagePath: spacerCardData[2][0],
+                userClass: spacerCardData[2][1],
+                userName: spacerCardData[2][2],
+                userType: spacerCardData[2][3],
+                tagimagePath: spacerCardData[2][4],
+              ),
+              ),
           ),
-          Positioned(
-            left: MediaQuery.of(context).size.width / 3,
-            child: Resize(
-              scale: 0.9, 
-              originalWidget: SpacerCard( // 1등
+      Container(
+        width: size.width * 0.333,
+        height: size.width * 0.333 + 59,
+        child: Resize(
+          scale:1,
+            originalWidget: SpacerCard( // 1등
               imagePath: spacerCardData[0][0],
               userClass: spacerCardData[0][1],
               userName: spacerCardData[0][2],
@@ -62,10 +68,12 @@ class Top3SpacerCardList extends StatelessWidget {
               tagimagePath: spacerCardData[0][4],
             ),
             ),
-          ),
-          Positioned(
+      ),
+          Container(
+            width: size.width * 0.333,
+            height: size.width * 0.333 + 59,
             child: Resize(
-              scale: 0.7, 
+              scale:0.9,
               originalWidget: SpacerCard( // 2등
               imagePath: spacerCardData[1][0],
               userClass: spacerCardData[1][1],

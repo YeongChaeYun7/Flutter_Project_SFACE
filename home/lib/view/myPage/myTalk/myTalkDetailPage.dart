@@ -5,10 +5,11 @@ import 'package:home/widget/Common/CommentBox.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
 import 'package:home/widget/HotTalk/BigBubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
-import 'package:home/widget/MyPage/MyTalk/MyCommentEditCard.dart';
+import 'package:home/widget/MyPage/MyTalk/EditableComment.dart';
+import 'package:home/widget/MyPage/MyTalk/OtherComment.dart';
 
-class myCommentEditPage extends StatelessWidget {
-  const myCommentEditPage({super.key});
+class myTalkDetailPage extends StatelessWidget {
+  const myTalkDetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +40,8 @@ class myCommentEditPage extends StatelessWidget {
                 ),
               ]),
             ),
-            const myCommentEditCard(),
+            EditableComment(),
+            otherComment(),
           ]),
         ),
         Expanded(

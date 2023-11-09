@@ -1,26 +1,47 @@
+// 캐치업 카드
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+// import 'dart:developer';
+// import 'dart:html';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
-// import 'package:flutter_svg/flutter_svg.dart';
-// import 'package:home/widget/GreyBox.dart';
+import 'package:home/widget/Catchup/DeletePopup.dart';
+import 'package:home/widget/Catchup/ProfilePopup.dart';
+import 'package:home/widget/Catchup/ScoreLike.dart';
 import 'package:home/widget/HotTalk/HeartIconButton.dart';
 import 'package:home/widget/Common/GreyBox.dart';
 import 'package:home/widget/Common/miniHorizontalUserData.dart';
-import 'package:home/widget/HotTalk/ScoreAvatar.dart';
+import 'package:dio/dio.dart';
 
-class CatchupCard extends StatelessWidget {
+class CatchupCard extends StatefulWidget {
   final String imagePath; // 아바타 이미지
   final String userClass; // 개발자 / 1기
   final String userName; // 신디
-  final String userType; // 수료생
-
-  const CatchupCard({
+  final String userType;  CatchupCard({
     Key? key,
     required this.userType,
     required this.imagePath,
     required this.userClass,
     required this.userName,
   }) : super(key: key);
+
+  @override
+  State<CatchupCard> createState() => _CatchupCardState();
+}
+
+class _CatchupCardState extends State<CatchupCard> {
+ // 수료생
+  final dio = Dio();
+    @override
+  void initState() {
+    testFunc();
+    super.initState();
+  }
+  void testFunc() async {
+    final response = await dio.get('https://dev.sniperfactory.com/api/catchup?filter=');
+    print(response.data.toString());
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -48,30 +69,54 @@ class CatchupCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Row(
+                      Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          MiniUserData(
-                            imagePath:
-                                'assets/icon/avatar/Property 1=Default.svg',
-                            userClass: '개발자 / 1기',
-                            userName: '우디',
-                            userType: '수료생',
+                          GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return ProfilePopup(
+                                    imagePath: 'assets/icon/avatar/Property 1=Default.svg',
+                                    userClass: '개발자 / 1기',
+                                    userName: '우디',
+                                    userType: '수료생',
+                                  );
+                                },
+                              );
+                            },
+                            child: MiniUserData(
+                              imagePath: 'assets/icon/avatar/Property 1=Default.svg',
+                              userClass: '개발자 / 1기',
+                              userName: '우디',
+                              userType: '수료생',
+                            ),
                           ),
                           HeartIconButton(),
                         ],
                       ),
                       const SizedBox(height: 8),
-                      const Text(
-                        '플러터 3.10 버전 업데이트 정리 지금부터 알려드릴게요!',
-                        style: TextStyle(
-                          color: AppColors.neutral_70,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 18,
-                        ),
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 2,
-                      ),
+                          GestureDetector(
+                            onTap: () {
+                              showDialog(
+                                context: context,
+                                builder: (BuildContext context) {
+                                  return CatchupDeletePopup();
+                                },
+                              );
+                            },
+                            child: Text(
+                              '플러터 3.10 버전 업데이트 정리 지금부터 알려드릴게요!',
+                              style: TextStyle(
+                                color: AppColors.neutral_70,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 18,
+                              ),
+                              overflow: TextOverflow.ellipsis,
+                              maxLines: 2,
+                            ),
+                          ),
                       const SizedBox(height: 8),
                       const Text('2023.09.04',
                           style: TextStyle(
@@ -99,22 +144,14 @@ class CatchupCard extends StatelessWidget {
                   ),
                   // child: AspectRatio(
                   // aspectRatio: 1.0,// 가로 길이 고정.
-                  child: SizedBox(
+                  child: SvgPicture.asset(
+                    'assets/catchup/rocket.svg',
                     height: double.infinity,
-                    child: Image.asset(
-                      'assets/Rocket.png',
-                      fit: BoxFit.cover,
+                    fit: BoxFit.cover
                     ),
-                    // SvgPicture.asset(
-                    //   'assets/ad/ad.svg',
-                    // ),
                   ),
-                  // SvgPicture.asset(
-                  //   'assets/ad/ad.svg',
-
                   // ),
                 ),
-              ),
             ],
           ),
         ),
@@ -122,10 +159,11 @@ class CatchupCard extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
-            const ScoreAvatar(),
-            SizedBox(width: MediaQuery.of(context).size.width * 0.05)
+            const ScoreLike(),
+            SizedBox(width: MediaQuery.of(context).size.width * 0.05),
           ],
-        )
+        ),
+        const SizedBox(height: 18),
       ],
     );
   }

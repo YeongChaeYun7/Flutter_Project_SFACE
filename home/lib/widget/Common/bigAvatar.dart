@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:home/styles/app_colors.dart';
 
 class BigAvatar extends StatelessWidget {
   final String imagePath; // 아바타 이미지
@@ -16,13 +17,19 @@ class BigAvatar extends StatelessWidget {
     return SizedBox(
       width: 100,
       height: 80,
-      child: Stack(children: [
-        Align(
-          alignment: Alignment.center,
-          child: SvgPicture.asset(
-            this.imagePath,
+      child: Stack(
+        children: [
+          Align(
+            alignment: Alignment.center,
+            child: CircleAvatar(
+              backgroundColor: AppColors.primary_10,
+              radius: 35,
+              child: SvgPicture.asset(this.imagePath,
+              height: 50,
+              width: 50,
+              ),
+            ),
           ),
-        ),
         Positioned(
           top: 63,
           right: 16,
@@ -32,7 +39,7 @@ class BigAvatar extends StatelessWidget {
             height: 16,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6),
-              color: const Color.fromRGBO(51, 122, 255, 1),
+              color: AppColors.primary_100
             ),
             child: Text(
               this.userClass,

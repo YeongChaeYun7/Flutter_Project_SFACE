@@ -26,7 +26,7 @@ class myTalkDetailPage extends StatelessWidget {
         ),
         const SizedBox(height: 30),
         Container(
-          height: MediaQuery.of(context).size.height * 0.53,
+          height: MediaQuery.of(context).size.height * 0.50,
           color: Colors.white,
           child: Column(children: [
             Padding(

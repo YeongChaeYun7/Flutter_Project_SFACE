@@ -26,7 +26,12 @@ class MyCommentCard extends StatelessWidget {
                 userType: '수료생'),
             Text('님의 톡에 댓글을 남겼습니다.'),
             SizedBox(width: 45),
-            SvgPicture.asset('assets/icon/icon_20/Right.svg')
+            GestureDetector(
+              onTap: () {
+                //myTalkDetailPage로 이동
+              },
+              child: SvgPicture.asset('assets/icon/icon_20/Right.svg'),
+            ),
           ]),
           Padding(
             padding: const EdgeInsets.only(left: 12),

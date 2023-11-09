@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:home/styles/app_colors.dart';
 import 'package:home/view/LoginPage/SignupComplPage.dart';
 import 'package:home/view/LoginPage/loginPage.dart';
 import 'package:home/view/LoginPage/splashPage.dart';

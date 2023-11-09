@@ -24,9 +24,9 @@ class TalkPage extends StatelessWidget {
                 const TitleBar(
                     imagePath: 'assets/icon/icon_70/fire.svg', Title: '핫한톡'),
                 const Row(children: [
-                  HomeAvatar(
-                      imagePath: 'assets/icon/avatar/Property 1=Default.svg',
-                      userClass: '개발자/1기'),
+                  // HomeAvatar(
+                  //     imagePath: 'assets/icon/avatar/Property 1=Default.svg',
+                  //     userClass: '개발자/1기'),
                   BubbleChat(),
                 ]),
                 const SizedBox(height: 25),

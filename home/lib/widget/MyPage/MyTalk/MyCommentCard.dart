@@ -1,3 +1,4 @@
+// 내가 쓴 이어달린 톡에 하얀 배경까지 카드로들어가는 위젯
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
@@ -5,7 +6,7 @@ import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/bigHorizontalUserData.dart';
 
 class MyCommentCard extends StatelessWidget {
-  const MyCommentCard({super.key});
+  MyCommentCard({super.key});
 
   @override
   Widget build(BuildContext context) {

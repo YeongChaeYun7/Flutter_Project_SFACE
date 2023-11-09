@@ -22,11 +22,11 @@ class _SignUpPageState extends State<SignUpPage> {
   void validateSignUp() {
     if (email.isNotEmpty && password.isNotEmpty && name.isNotEmpty && phoneNumber.isNotEmpty) {
       setState(() {
-        canSignUp = true;
+        canSignUp = canSignUp||true;
       });
     } else {
       setState(() {
-        canSignUp = false;
+        canSignUp = canSignUp&&false;
       });
     }
   }
@@ -73,6 +73,11 @@ class _SignUpPageState extends State<SignUpPage> {
               placeholder: "이름을 입력해주세요.",
               isPassword: false,
               onWarning: (input) {
+                if (input!.isNotEmpty && input.contains('\s')) {
+                  canSignUp=false;
+                  return "공백넣지뫄!!!";
+                }
+                canSignUp=true;
                 return null;
               },
               onChanged: (input) {
@@ -88,6 +93,11 @@ class _SignUpPageState extends State<SignUpPage> {
               placeholder: "이메일을 입력해주세요.",
               isPassword: false,
               onWarning: (input) {
+                if (input!.isNotEmpty && !RegExp(r"^[a-zA-Z0-9.!#$%&'*/+\-=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(input)) {
+                  canSignUp=false;
+                  return "이메일 형식 맞춰!!!";
+                }
+                canSignUp=true;
                 return null;
               },
               onChanged: (input) {
@@ -103,6 +113,13 @@ class _SignUpPageState extends State<SignUpPage> {
               placeholder: "비밀번호를 입력해주세요.",
               isPassword: false,
               onWarning: (input) {
+                if (input != null){
+                  if (input.length<8) {
+                    canSignUp=false;
+                    return "8글자 넘으라고!!!";
+                  }
+                }
+                canSignUp=true;
                 return null;
               },
               onChanged: (input) {
@@ -118,6 +135,9 @@ class _SignUpPageState extends State<SignUpPage> {
               placeholder: "휴대폰 번호를 입력해주세요.",
               isPassword: false,
               onWarning: (input) {
+                if (input!.isNotEmpty && !RegExp(r"^[0-9]*").hasMatch(input)) {
+                  return "숫자말고 넣지마!!!";
+                }
                 return null;
               },
               onChanged: (input) {
@@ -128,14 +148,13 @@ class _SignUpPageState extends State<SignUpPage> {
             Spacer(),
             ValidateButton(
               available: canSignUp,
-              text: "보내기",
+              text: "회원가입 하기",
               onPressed: () {
                 SignUp(name, email, password, phoneNumber).then(
                       (value) {
                     if (value == true) {
                       //성공!
-                    } else {
-                      //실패!
+                      Navigator.of(context).pushReplacementNamed("/SignUpComplete");
                     }
                   },
                 );

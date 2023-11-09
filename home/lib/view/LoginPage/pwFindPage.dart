@@ -16,7 +16,18 @@ class _PwFindPageState extends State<PwFindPage> {
   String email = "";
   bool canEmailSend = false;
 
-  //todo : 결아 살려조
+  void validatePwFind() {
+    if (email.isNotEmpty) {
+      setState(() {
+        canEmailSend = true;
+      });
+    } else {
+      setState(() {
+        canEmailSend= false;
+      });
+    }
+  }
+
   Future<bool> emailSendPw(String email) async {
     if (email.isNotEmpty) {
       final Uri apiUri = Uri.parse('https://dev.sniperfactory.com/api/auth/forgot-password');
@@ -24,7 +35,9 @@ class _PwFindPageState extends State<PwFindPage> {
       if (response.statusCode == 200) {
         final responseData = json.decode(response.body);
         if (responseData['status']) {
+          print(responseData);
           return true;
+
         }
       }
     }
@@ -66,6 +79,7 @@ class _PwFindPageState extends State<PwFindPage> {
               },
               onChanged: (input) {
                 email = input;
+                canEmailSend=true;
               },
             ),
             Spacer(),
@@ -77,6 +91,7 @@ class _PwFindPageState extends State<PwFindPage> {
                       (value) {
                     if (value == true) {
                       //성공!
+                      print("성공");
                       showDialog(
                         context: context,
                         builder: (BuildContext context) => AlertDialog(
@@ -94,8 +109,6 @@ class _PwFindPageState extends State<PwFindPage> {
                           ],
                         ),
                       );
-                    } else {
-                      //실패!
                     }
                   },
                 );

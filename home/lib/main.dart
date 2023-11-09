@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
+import 'package:home/view/LoginPage/SignupComplPage.dart';
 import 'package:home/view/LoginPage/loginPage.dart';
 import 'package:home/view/LoginPage/splashPage.dart';
 import 'package:home/view/homePage/main_page.dart';
@@ -22,6 +23,7 @@ class MyApp extends StatelessWidget {
           '/login' : (context) => const LoginPage(),
           '/home' : (context) => const MainPage(),
           '/talk' : (context) => const TalkPage(),
+          '/SignUpComplete' : (context) => SignUPCompletePage(),
         },
         theme: ThemeData(
           scaffoldBackgroundColor: Colors.white,

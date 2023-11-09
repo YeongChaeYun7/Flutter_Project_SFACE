@@ -1,7 +1,5 @@
 // 모집 인원 카운팅 팝업 창 위젯
 import 'package:flutter/material.dart';
-
-import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
 
 class RecruitNumPopup extends StatefulWidget {
@@ -52,19 +50,19 @@ class _RecruitNumPopupState extends State<RecruitNumPopup> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    width: 30,
-                    height: 30,
+                    width: 32,
+                    height: 32,
                     decoration: BoxDecoration(
                       color: AppColors.neutral_5,
-                      borderRadius: BorderRadius.circular(10),
+                      borderRadius: BorderRadius.circular(8),
                     ),
                     child: Center(
                       child: Text(
                         count.toString(),
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 26,
                           fontWeight: FontWeight.bold,
-                          color: AppColors.neutral_40,
+                          color: AppColors.neutral_50,
                         ),
                       ),
                     ),
@@ -73,9 +71,9 @@ class _RecruitNumPopupState extends State<RecruitNumPopup> {
                   Text(
                     "명",
                     style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 22,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.neutral_60,
+                      color: AppColors.neutral_70,
                     ),
                   ),
                 ],

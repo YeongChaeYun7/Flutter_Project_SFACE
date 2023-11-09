@@ -6,7 +6,7 @@ import 'package:home/styles/app_colors.dart';
 class PostCard extends StatefulWidget {
   final TextEditingController titleController = TextEditingController();
   final TextEditingController contentController = TextEditingController();
-  final TextEditingController tagController = TextEditingController(); // 추가된 부분
+  final TextEditingController tagController = TextEditingController(); 
   final List<String> tags = [];
   final String tagValue = ''; // API 전달 값. #태그내용#태그내용
 
@@ -55,20 +55,26 @@ class _PostCardState extends State<PostCard> {
                 ),
                 // 내용 입력란
                 Padding(
-                  padding: EdgeInsets.symmetric(vertical: 8.0),
-                  child: TextField(
-                    controller: widget.contentController,
-                    decoration: InputDecoration(
-                      hintText: '내용을 입력해 주세요.',
-                      hintStyle: TextStyle(color: AppColors.neutral_40),
-                      // Remove the underline border
-                      focusedBorder: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                    ),
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: AppColors.neutral_40,
-                    ),
+                  padding: EdgeInsets.fromLTRB(10, 0, 0, 10),
+                  child: Column(
+                    children: [
+                      TextField(
+                        controller: widget.contentController,
+                          keyboardType: TextInputType.multiline, // 키보드 입력을 여러 줄로 허용
+                          maxLines: 7, 
+                        decoration: InputDecoration(
+                          hintText: '내용을 입력해 주세요.',
+                          hintStyle: TextStyle(color: AppColors.neutral_40),
+                          // Remove the underline border
+                          focusedBorder: InputBorder.none,
+                          enabledBorder: InputBorder.none,
+                        ),
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: AppColors.neutral_40,
+                        ),
+                      ),
+                    ],
                   ),
                 ),
               ],
@@ -80,34 +86,41 @@ class _PostCardState extends State<PostCard> {
               alignment: Alignment.center,
               decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(5),
-              color: AppColors.stroke_line_5,
+              color: AppColors.neutral_10,
               ),
               child: Row(
                 children: [
-                  Text('#', style: TextStyle(fontSize: 16, color: AppColors.neutral_40),),
-                  TextField(
-                    controller: widget.tagController,
-                    onSubmitted: (value) {
-                      setState(() {
-                        widget.tags.add(value);
-                        widget.tagController.clear();
-                      });
-                    },
-                    decoration: InputDecoration(
-                      hintText: '태그 입력',
-                      hintStyle: TextStyle(color: AppColors.neutral_40),
-                      focusedBorder: InputBorder.none,
-                      enabledBorder: InputBorder.none,
-                    ),
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: AppColors.neutral_40,
-                    ),
-                  ),
+                  Text('#', style: TextStyle(fontSize: 14, color: AppColors.neutral_50),),
+                  Text('#', style: TextStyle(fontSize: 14, color: AppColors.neutral_50),),
+          //      TextField(
+          //           controller: widget.tagController,
+          //           onSubmitted: (value) {
+          //             setState(() {
+          //               widget.tags.add(value);
+          //               widget.tagController.clear();
+          //             });
+          //           },
+          //           decoration: InputDecoration(
+          //             hintText: '태그 입력',
+          //             hintStyle: TextStyle(color: AppColors.neutral_40,fontSize: 14,),
+          //             focusedBorder: InputBorder.none,
+          //             enabledBorder: InputBorder.none,
+          //           ),
+          //           style: TextStyle(
+          //             fontSize: 16,
+          //             color: AppColors.neutral_40,
+          //           ),
+          //         ),
                 ],
               ),
             ),
           ),
+        ],
+      ),
+    );
+  }
+}
+
           // Wrap(
           //   spacing: 8,
           //   runSpacing: 4,
@@ -127,8 +140,3 @@ class _PostCardState extends State<PostCard> {
           //     );
           //   }).toList(),
           // ),
-        ],
-      ),
-    );
-  }
-}

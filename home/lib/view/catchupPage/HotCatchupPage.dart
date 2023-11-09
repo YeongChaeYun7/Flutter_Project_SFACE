@@ -27,26 +27,26 @@ class HotCatchupPage extends StatelessWidget {
               ],
             ),
             const SizedBox(height: 8),
-            const CatchupCard(
+            CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
               userClass: '개발자/1기',
               userName: '신디',
               userType: '수료생',
             ),
             const SizedBox(height: 16),
-            const CatchupCard(
+            CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
               userClass: '개발자/1기',
               userName: '신디',
               userType: '수료생',
             ),
-            const CatchupCard(
+            CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
               userClass: '개발자/1기',
               userName: '신디',
               userType: '수료생',
             ),
-            const CatchupCard(
+            CatchupCard(
               imagePath: 'assets/icon/icon_70/laptop.svg',
               userClass: '개발자/1기',
               userName: '신디',

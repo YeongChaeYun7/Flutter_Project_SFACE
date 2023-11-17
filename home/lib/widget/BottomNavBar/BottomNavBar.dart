@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/styles/app_colors.dart';
+
 class MyBottomNavigationBar extends StatefulWidget {
   @override
   _MyBottomNavigationBarState createState() => _MyBottomNavigationBarState();
@@ -13,6 +14,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
     0.2126,0.7152,0.0722,0,0, 
     0,0,0,1,0, 
     ];
+  static List<String> itemUrls = ["/home", "/talk", "/catchup", "/mogakko", "/mypage"];
   static List<String> itemNames = ["홈", "톡", "캐치업!", "모각코!", "마이페이지"];
   static List<String> itemIcons = [
     'assets/icon/icon_30/Home.svg',
@@ -35,7 +37,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
                     width: 24,
                   )
                 : ColorFiltered(
-                    colorFilter: ColorFilter.matrix(greyScaleFilter), 
+                    colorFilter: ColorFilter.matrix(greyScaleFilter),
                     child: SvgPicture.asset(
                       itemIcons[i],
                       height: 24,
@@ -47,6 +49,7 @@ class _MyBottomNavigationBarState extends State<MyBottomNavigationBar> {
       ],
       currentIndex: _selectedIndex,
       onTap: (int index) {
+        Navigator.of(context).pushNamed(itemUrls[index]);
         setState(() {
           _selectedIndex = index;
         });

@@ -1,18 +1,58 @@
 // 캐치업카드 클릭시 삭제된 데이터면 뜨는 팝업 창
-// 로그인 파트에서 만든 위젯 재사용 예정이라 내용만 정리해놓음
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:home/styles/app_colors.dart';
+import 'package:home/widget/Button/validateButton.dart';
 
-class DeletePopup extends StatelessWidget {
-  @override
+class CatchupDeletePopup extends StatelessWidget {
+
+@override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () {
-        Navigator.of(context).pop(); // 클릭 시 팝업을 닫음
-      },
-      child: AlertDialog(
-        title: Text('삭제'),
-        content: Container(
-          child: Text('popup'),
+    return AlertDialog(
+        shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(10), 
+      ),
+      alignment: Alignment.center,
+      content: Container(
+        constraints: BoxConstraints(
+          maxHeight: 190, 
+          minWidth: 80,
+        ),
+                child: Column(
+          mainAxisAlignment: MainAxisAlignment.center, 
+          children: [
+            SvgPicture.asset(
+              "assets/icon/icon_20/warning.svg",
+              height: 70,
+              ),
+            SizedBox(height: 16),
+            Text(
+              '이미 삭제된 캐치업입니다!',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 20,
+              ),
+              textAlign: TextAlign.center,
+            ),
+            SizedBox(height: 8),
+            Text(
+              '클릭하신 캐치업을 찾을 수 없습니다.',
+              style: TextStyle(
+                fontSize: 15,
+                color: AppColors.neutral_40,
+              ),
+            ),
+            SizedBox(height: 16),
+            Container(
+              width: MediaQuery.of(context).size.width * 0.5,
+              height: 30,
+              child: ValidateButton(
+                available: true,
+                text: "닫기",
+                onPressed: () => Navigator.of(context).pop(),
+              ),
+            ),
+          ],
         ),
       ),
     );

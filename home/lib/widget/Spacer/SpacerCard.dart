@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/Common/GreyBox.dart';
-import 'package:home/widget/Spacer/SpacerAvatar.dart';
+import 'package:home/widget/Common/bigAvatar.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class SpacerCard extends StatelessWidget {
@@ -24,15 +24,19 @@ class SpacerCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final size = MediaQuery.of(context).size;
+
+    print(size.height);
+    print(size.width);
     return Stack(
       children: [
         Container(
           margin: EdgeInsets.only(top:22),
           child: Container(
-            height: 180,
-            width: 160,
-            padding: EdgeInsets.all(16.0),
-            margin: EdgeInsets.symmetric(horizontal: 8.0),
+            height: 165.4,
+            width: 134,
+            padding: const EdgeInsets.all(16.0),
+            margin: const EdgeInsets.symmetric(horizontal: 8.0),
             decoration: BoxDecoration(
               color: Colors.white,
               borderRadius: BorderRadius.circular(8.0),
@@ -42,7 +46,7 @@ class SpacerCard extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
-                SpacerAvatar(imagePath: this.imagePath, userClass: this.userClass),
+                BigAvatar(imagePath: this.imagePath, userClass: this.userClass),
                 SizedBox(height: 10),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,

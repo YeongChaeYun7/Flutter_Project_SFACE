@@ -22,7 +22,7 @@ class TalkPage extends StatelessWidget {
             child: ListView(
               children: [
                 const TitleBar(
-                    imagePath: 'assets/icon/icon_70/fire.svg', Title: '핫한톡'),
+                    imagePath: 'assets/icon/icon_70/fire.svg', Title: '핫한톡',url: '/talk/hot'),
                 const Row(children: [
                   HomeAvatar(
                       imagePath: 'assets/icon/avatar/Property 1=Default.svg',
@@ -31,7 +31,7 @@ class TalkPage extends StatelessWidget {
                 ]),
                 const SizedBox(height: 25),
                 const TitleBar(
-                    imagePath: 'assets/icon/icon_70/fire.svg', Title: '톡톡톡'),
+                    imagePath: 'assets/icon/icon_70/fire.svg', Title: '톡톡톡',url: '/talk/talk'),
                 ListView.separated(
                   physics: const NeverScrollableScrollPhysics(),
                   shrinkWrap: true,

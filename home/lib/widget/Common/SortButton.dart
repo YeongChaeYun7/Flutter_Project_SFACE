@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/styles/app_colors.dart';
 
-class DateSortButton extends StatelessWidget {
+class SortButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(

@@ -7,7 +7,7 @@ class HomeAvatar extends StatelessWidget {
       {super.key, required this.imagePath, required this.userClass});
 
   final String imagePath;
-  final String userClass;
+  final String? userClass;
 
   @override
   Widget build(BuildContext context) {
@@ -20,23 +20,24 @@ class HomeAvatar extends StatelessWidget {
             alignment: Alignment.center,
             child: SvgPicture.asset(imagePath),
           ),
-          Positioned(
-            top: 63,
-            right: 16,
-            left: 16,
-            child: Container(
-              alignment: Alignment.center,
-              height: 16,
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(6),
-                color: AppColors.primary_80,
+          if (userClass != null)
+            Positioned(
+              top: 63,
+              right: 16,
+              left: 16,
+              child: Container(
+                alignment: Alignment.center,
+                height: 16,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(6),
+                  color: AppColors.primary_80,
+                ),
+                child: Text(
+                  ' $userClass ',
+                  style: const TextStyle(color: Colors.white, fontSize: 11),
+                ),
               ),
-              child: Text(
-                ' $userClass ',
-                style: const TextStyle(color: Colors.white, fontSize: 11),
-              ),
-            ),
-          )
+            )
         ]),
       ),
       const SizedBox(

@@ -5,7 +5,6 @@ import 'package:home/styles/app_colors.dart';
 class GreyBox extends StatelessWidget {
   final String text;
 
-  // const GreyBox({super.key, required this.text});
   GreyBox({
     Key? key,
     required this.text,

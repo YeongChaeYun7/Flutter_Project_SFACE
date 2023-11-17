@@ -16,7 +16,9 @@ class HotTalkDetailPage extends StatelessWidget {
       body: Column(children: [
         const Search(),
         const TitleBar2(Title: '핫한톡'),
-        ListView.separated(
+        Expanded(
+          flex: 1,
+          child: ListView.separated(
           shrinkWrap: true,
           itemCount: 6,
           itemBuilder: (BuildContext context, index) => const Row(
@@ -31,6 +33,7 @@ class HotTalkDetailPage extends StatelessWidget {
             return const SizedBox(height: 10);
           },
         ),
+        )
       ]),
     );
   }

@@ -56,8 +56,9 @@ class _LoginPageState extends State<LoginPage> {
       backgroundColor: Colors.white,
       body: Column(
         children: [
+          Spacer(),
           Container(child: SvgPicture.asset('assets/icon/icon_20/msg.svg')),
-          Container(child: SvgPicture.asset('assets/icon/logo/Nav_Logo.svg')),
+          Container(child: SvgPicture.asset('assets/icon/logo/Logo.svg')),
           const Spacer(),
           Input(
             placeholder: "이메일 주소를 입력해주세요.",
@@ -84,6 +85,7 @@ class _LoginPageState extends State<LoginPage> {
           ),
           const SizedBox(height: 5),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(height: 30),
               TextButton(
@@ -116,6 +118,7 @@ class _LoginPageState extends State<LoginPage> {
               },
               child: const Text('data')),
           ValidateButton(
+            width : 330,
             available: canLogin,
             text: "로그인",
             onPressed: () {
@@ -123,6 +126,7 @@ class _LoginPageState extends State<LoginPage> {
                 (value) {
                   if (value != null) {
                     //성공!
+                    Navigator.of(context).pushReplacementNamed("/home");
                   } else {
                     //실패!
                     showDialog(

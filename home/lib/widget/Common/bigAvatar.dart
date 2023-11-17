@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:home/styles/app_colors.dart';
 
 class BigAvatar extends StatelessWidget {
   final String imagePath; // 아바타 이미지
   final String userClass;
 
-  BigAvatar({
-    super.key, 
-    required this.imagePath, 
-    required this.userClass
-    });
+  BigAvatar({super.key, required this.imagePath, required this.userClass});
 
   @override
   Widget build(BuildContext context) {
@@ -21,6 +18,8 @@ class BigAvatar extends StatelessWidget {
           alignment: Alignment.center,
           child: SvgPicture.asset(
             this.imagePath,
+            height: 60,
+            width: 60,
           ),
         ),
         Positioned(
@@ -29,11 +28,10 @@ class BigAvatar extends StatelessWidget {
           left: 16,
           child: Container(
             alignment: Alignment.center,
-            height: 16,
+            height: 17,
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(6),
-              color: const Color.fromRGBO(51, 122, 255, 1),
-            ),
+                borderRadius: BorderRadius.circular(6),
+                color: AppColors.primary_80),
             child: Text(
               this.userClass,
               style: TextStyle(color: Colors.white, fontSize: 11),

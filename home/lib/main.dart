@@ -9,7 +9,6 @@ import 'package:home/view/myPage/myPage.dart';
 import 'package:home/view/spacerPage/spacerPage.dart';
 import 'package:home/view/talkPage/HotTalkDetailPage.dart';
 import 'package:home/view/talkPage/SingleDetailPage.dart';
-import 'package:home/view/talkPage/TalkPage.dart';
 import 'package:home/view/talkPage/TalkTalkDetailPage.dart';
 import 'package:home/styles/app_colors.dart';
 

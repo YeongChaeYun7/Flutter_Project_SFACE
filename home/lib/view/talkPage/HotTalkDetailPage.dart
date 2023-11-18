@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home/widget/Common/TitleBar2.dart';
-import 'package:home/widget/FloatingButton/%20FloatingButtonPopup.dart';
+import 'package:home/widget/Common/%20FloatingButtonPopup.dart';
 
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';

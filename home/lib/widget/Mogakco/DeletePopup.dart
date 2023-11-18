@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:home/styles/app_colors.dart';
-import 'package:home/widget/Button/validateButton.dart';
+import 'package:home/widget/Common/validateButton.dart';
 
 class MogakcoDeletePopup extends StatelessWidget {
 

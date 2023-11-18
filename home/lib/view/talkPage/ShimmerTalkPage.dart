@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:home/styles/app_colors.dart';
 import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
-import 'package:home/widget/FloatingButton/%20FloatingButtonPopup.dart';
+import 'package:home/widget/Common/%20FloatingButtonPopup.dart';
 
 import 'package:home/widget/Search/search.dart';
 import 'package:home/widget/Shimmer/ShimmerContainer.dart';

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:home/widget/BottomNavBar/BottomNavBar.dart';
 import 'package:home/widget/Common/TitleBar.dart';
 
-import 'package:home/widget/FloatingButton/%20FloatingButtonPopup.dart';
+import 'package:home/widget/Common/%20FloatingButtonPopup.dart';
 import 'package:home/widget/HotTalk/BubbleChat.dart';
 import 'package:home/widget/HotTalk/HomeAvatar.dart';
 import 'package:home/widget/Search/search.dart';

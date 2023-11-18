@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:home/view/LoginPage/pwFindPage.dart';
 import 'package:home/view/LoginPage/signUpPage.dart';
 import 'package:home/view/homePage/main_page.dart';
-import 'package:home/widget/Button/validateButton.dart';
+import 'package:home/widget/Common/validateButton.dart';
 import 'package:home/widget/input/input.dart';
 import 'package:http/http.dart' as http;
 import 'dart:convert';

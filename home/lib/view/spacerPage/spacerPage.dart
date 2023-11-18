@@ -104,4 +104,3 @@ class MyPainter extends CustomPainter {
     return false;
   }
 }
-
